@@ -42,7 +42,20 @@ public class LoginPageHelper extends BasePage{
     public WebElement homeTabBtn;
 
     @iOSXCUITFindBy(iOSClassChain = "**/XCUIElementTypeStaticText[`label == \"Call Support (800) 704-9412\"`]")
+    @AndroidFindBy(id = "net.grandpad.puma:id/tvInfoSupport")
     public WebElement callNumberBtn;
+
+    @AndroidFindBy( id = "net.grandpad.puma:id/ivLogo")
+    public WebElement grandPadLogo;
+
+    @AndroidFindBy(id ="net.grandpad.puma:id/btnOpenEmail")
+    public WebElement openEmailBtn;
+
+    @AndroidFindBy(id ="net.grandpad.puma:id/ivGameCenter")
+    public WebElement gameCenterIcon;
+
+    @AndroidFindBy(id = "net.grandpad.puma:id/tvFeedGreetingName")
+    public WebElement faUserName;
 
     public void enterUserName(String username)
     {
