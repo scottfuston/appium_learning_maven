@@ -1,0 +1,11 @@
+[Android_Google Pixel 6 Pro INFO ] 2023-03-22 16:50:23.748 ServerManager:19 - starting appium server
+[Android_Google Pixel 6 Pro INFO ] 2023-03-22 16:50:24.101 ServerManager:31 - Appium server started
+[Android_Google Pixel 6 Pro INFO ] 2023-03-22 16:50:24.121 DriverManager:30 - initializing Appium driver
+[Android_Google Pixel 6 Pro INFO ] 2023-03-22 16:50:24.148 PropertyManager:17 - loading config properties
+[Android_Google Pixel 6 Pro INFO ] 2023-03-22 16:50:24.152 CapabilitiesManager:17 - Setting Capabilities
+[Android_Google Pixel 6 Pro INFO ] 2023-03-22 16:50:41.241 DriverManager:47 - Driver is initialized
+[Android_Google Pixel 6 Pro INFO ] 2023-03-22 16:50:49.111 BasePage:46 - Email user : jose.virgen+02@grandpad.net
+[Android_Google Pixel 6 Pro INFO ] 2023-03-22 16:50:51.369 BasePage:41 - Clicking Continue Button
+[Android_Google Pixel 6 Pro INFO ] 2023-03-22 16:50:53.993 BasePage:41 - Clicking Type my Password Button
+[Android_Google Pixel 6 Pro INFO ] 2023-03-22 16:50:56.142 BasePage:46 - Typing password Test12345!
+[Android_Google Pixel 6 Pro INFO ] 2023-03-22 16:50:58.555 BasePage:41 - Clicking LogIn Submit Button

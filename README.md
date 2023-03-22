@@ -1,0 +1,1 @@
+https://github.com/appium/java-client/issues/1619

@@ -1,0 +1,5 @@
+[iOS_iPhone 14 Pro Max INFO ] 2023-03-22 16:31:59.386 ServerManager:19 - starting appium server
+[iOS_iPhone 14 Pro Max INFO ] 2023-03-22 16:31:59.810 ServerManager:31 - Appium server started
+[iOS_iPhone 14 Pro Max INFO ] 2023-03-22 16:31:59.841 DriverManager:30 - initializing Appium driver
+[iOS_iPhone 14 Pro Max INFO ] 2023-03-22 16:31:59.872 PropertyManager:17 - loading config properties
+[iOS_iPhone 14 Pro Max INFO ] 2023-03-22 16:31:59.876 CapabilitiesManager:17 - Setting Capabilities
