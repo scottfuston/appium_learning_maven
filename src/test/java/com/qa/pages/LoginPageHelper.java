@@ -42,11 +42,36 @@ public class LoginPageHelper extends BasePage{
     public WebElement homeTabBtn;
 
     @iOSXCUITFindBy(iOSClassChain = "**/XCUIElementTypeStaticText[`label == \"Call Support (800) 704-9412\"`]")
+    @AndroidFindBy(id = "net.grandpad.puma:id/tvInfoSupport")
     public WebElement callNumberBtn;
+
+    @AndroidFindBy( id = "net.grandpad.puma:id/ivLogo")
+    public WebElement grandPadLogo;
+
+    @AndroidFindBy(id ="net.grandpad.puma:id/btnOpenEmail")
+    public WebElement openEmailBtn;
+
+    @AndroidFindBy(id ="net.grandpad.puma:id/ivGameCenter")
+    public WebElement gameCenterIcon;
+
+    @AndroidFindBy(id = "net.grandpad.puma:id/tvFeedGreetingName")
+    public WebElement faUserName;
+
+    @AndroidFindBy (id="android:id/alertTitle")
+    public WebElement supportNumberAlertTitle;
+
+    @AndroidFindBy (id="android:id/button2")
+    public WebElement supportNumberAlertCancelBtn;
+
+    @AndroidFindBy (id="android:id/button1")
+    public WebElement supportNumberAlertCallBtn;
+
+    @AndroidFindBy (id = "net.grandpad.puma:id/snackbar_text")
+    public WebElement emailErrorMessage;
 
     public void enterUserName(String username)
     {
-
+        clear(emailInput,"Clearing email input field");
         sendKeys(emailInput,username,"Email user : " + username);
         click(continueBtn,"Clicking Continue Button");
 
@@ -77,5 +102,15 @@ public class LoginPageHelper extends BasePage{
 
     public void callNumberIsDisplayed() {
         Assert.assertEquals("Call Support Number is displayed",true,callNumberBtn.isDisplayed());
+    }
+
+    public void errorMessageIsDisplayed() {
+        waitForVisibility(emailErrorMessage);
+        Assert.assertEquals("Email error message is displayed",true,emailErrorMessage.isDisplayed());
+    }
+
+    public void gpLogoIsDisplayed() {
+        waitForVisibility(grandPadLogo);
+        Assert.assertEquals("Grandpad Log is displayed",true,grandPadLogo.isDisplayed());
     }
 }
