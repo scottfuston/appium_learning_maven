@@ -26,8 +26,9 @@ public class BasePage {
         wait.until(ExpectedConditions.visibilityOf(e));
 
     }
-    public void clear(WebElement e) {
+    public void clear(WebElement e,String msg) {
         waitForVisibility(e);
+        utils.log().info(msg);
         e.clear();
     }
 
