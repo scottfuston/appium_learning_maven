@@ -37,6 +37,17 @@ public class LoginStepDef extends BasePage {
     public void callSupportNumberIsDisplayed() {
         new LoginPageHelper().callNumberIsDisplayed();
     }
+
+    @Then("I see an error message")
+    public void i_see_an_error_message() {
+        new LoginPageHelper().errorMessageIsDisplayed();
+
+    }
+
+    @Then("Grandpad Logo is displayed")
+    public void grandpadLogoIsDisplayed() {
+        new LoginPageHelper().gpLogoIsDisplayed();
+    }
 }
 
 
