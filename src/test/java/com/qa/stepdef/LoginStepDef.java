@@ -48,6 +48,27 @@ public class LoginStepDef extends BasePage {
     public void grandpadLogoIsDisplayed() {
         new LoginPageHelper().gpLogoIsDisplayed();
     }
+
+    @And("I click on the profile button")
+    public void iClickOnTheProfileButton() {
+        new LoginPageHelper().clickOnProfileBtn();
+    }
+
+    @And("I click on the gear icon")
+    public void iClickOnTheGearIcon() {
+        new LoginPageHelper().clickOnGearIcon();
+
+    }
+
+    @And("I click on log out button")
+    public void iClickOnLogOutButton() {
+        new LoginPageHelper().clickOnLogOutBtn();
+    }
+
+    @Then("I log out")
+    public void iLogOut() {
+        new LoginPageHelper().logout();
+    }
 }
 
 

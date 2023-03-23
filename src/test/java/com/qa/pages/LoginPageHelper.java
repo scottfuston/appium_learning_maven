@@ -46,15 +46,19 @@ public class LoginPageHelper extends BasePage{
     public WebElement callNumberBtn;
 
     @AndroidFindBy( id = "net.grandpad.puma:id/ivLogo")
+    @iOSXCUITFindBy(accessibility = "logo_2020")
     public WebElement grandPadLogo;
 
     @AndroidFindBy(id ="net.grandpad.puma:id/btnOpenEmail")
+    @iOSXCUITFindBy(iOSNsPredicate = "label == \"Open Email\" AND name == \"Open Email\" AND type == \"XCUIElementTypeButton\"")
     public WebElement openEmailBtn;
 
     @AndroidFindBy(id ="net.grandpad.puma:id/ivGameCenter")
+    @iOSXCUITFindBy(accessibility = "games icon")
     public WebElement gameCenterIcon;
 
     @AndroidFindBy(id = "net.grandpad.puma:id/tvFeedGreetingName")
+    @iOSXCUITFindBy(iOSNsPredicate = "label == \"Hi James,\" AND name == \"Hi James,\" AND value == \"Hi James,\"")
     public WebElement faUserName;
 
     @AndroidFindBy (id="android:id/alertTitle")
@@ -67,10 +71,30 @@ public class LoginPageHelper extends BasePage{
     public WebElement supportNumberAlertCallBtn;
 
     @AndroidFindBy (id = "net.grandpad.puma:id/snackbar_text")
+    @iOSXCUITFindBy(accessibility = "Invalid Email")
     public WebElement emailErrorMessage;
+
+    @AndroidFindBy(id = "net.grandpad.puma:id/clFeedGreeting")
+    public WebElement feedGreeting;
+
+    @AndroidFindBy(id = "net.grandpad.puma:id/ivFeedProfile")
+    public WebElement profileBtn;
+
+    @AndroidFindBy(accessibility = "Settings")
+    public WebElement settingsGear;
+
+    @AndroidFindBy(id = "net.grandpad.puma:id/tvSettingsLogOut")
+    public WebElement logoutBtn;
+
+    @AndroidFindBy(id = "net.grandpad.puma:id/etLogoutDialog")
+    public WebElement logOutDialogBtn;
+
+    @AndroidFindBy(id = "android:id/button1")
+    public WebElement confirmLogoutBtn;
 
     public void enterUserName(String username)
     {
+        waitForVisibility(emailInput);
         clear(emailInput,"Clearing email input field");
         sendKeys(emailInput,username,"Email user : " + username);
         click(continueBtn,"Clicking Continue Button");
@@ -96,6 +120,8 @@ public class LoginPageHelper extends BasePage{
 
     public void iamLoggedIn()
     {
+        waitForVisibility(feedGreeting);
+        click(feedGreeting);
         waitForVisibility(homeTabBtn);
         Assert.assertEquals("Home Button is displayed",true,homeTabBtn.isDisplayed());
     }
@@ -112,5 +138,30 @@ public class LoginPageHelper extends BasePage{
     public void gpLogoIsDisplayed() {
         waitForVisibility(grandPadLogo);
         Assert.assertEquals("Grandpad Log is displayed",true,grandPadLogo.isDisplayed());
+    }
+
+    public void clickOnProfileBtn()
+    {
+        waitForVisibility(profileBtn);
+        click(profileBtn,"clicking profile user button");
+    }
+
+    public void clickOnGearIcon()
+    {
+        waitForVisibility(settingsGear);
+        click(settingsGear,"clicking setting gear icon");
+    }
+
+    public void clickOnLogOutBtn()
+    {
+        waitForVisibility(logoutBtn);
+        click(logoutBtn,"clicking logout button");
+    }
+
+    public void logout()
+    {
+        waitForVisibility(logOutDialogBtn);
+        sendKeys(logoutBtn,"logout","typing logout");
+        click(logInSubmitBtn,"Confirming - Clicking logout Button");
     }
 }
