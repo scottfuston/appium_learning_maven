@@ -1,7 +1,7 @@
 package com.qa.stepdef;
 
 import com.qa.pages.BasePage;
-import com.qa.pages.LoginPageHelper;
+import com.qa.tests.LoginTests;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.When;
@@ -10,64 +10,64 @@ public class LoginStepDef extends BasePage {
 
     @When("I enter username as {string}")
     public void iEnterUsernameAs(String username) {
-        new LoginPageHelper().enterUserName(username);
+        new LoginTests().enterUserName(username);
     }
 
     @And("I enter password as {string}")
     public void iEnterPasswordAs(String password) {
-        new LoginPageHelper().enterPassword(password);
+        new LoginTests().enterPassword(password);
     }
 
     @When("I enter submit button")
     public void iLogin() {
-       new LoginPageHelper().login();
+       new LoginTests().login();
     }
 
     @Then("I should be logged in")
     public void iShouldBeLoggedIn() {
-        new LoginPageHelper().iamLoggedIn();
+        new LoginTests().iamLoggedIn();
     }
 
     @And("I accept notifications")
     public void iAcceptNotifications() {
-        new LoginPageHelper().iAcceptNotifications();
+        new LoginTests().iAcceptNotifications();
     }
 
     @Then("call support number is displayed")
     public void callSupportNumberIsDisplayed() {
-        new LoginPageHelper().callNumberIsDisplayed();
+        new LoginTests().callNumberIsDisplayed();
     }
 
     @Then("I see an error message")
     public void i_see_an_error_message() {
-        new LoginPageHelper().errorMessageIsDisplayed();
+        new LoginTests().errorMessageIsDisplayed();
 
     }
 
     @Then("Grandpad Logo is displayed")
     public void grandpadLogoIsDisplayed() {
-        new LoginPageHelper().gpLogoIsDisplayed();
+        new LoginTests().gpLogoIsDisplayed();
     }
 
     @And("I click on the profile button")
     public void iClickOnTheProfileButton() {
-        new LoginPageHelper().clickOnProfileBtn();
+        new LoginTests().clickOnProfileBtn();
     }
 
     @And("I click on the gear icon")
     public void iClickOnTheGearIcon() {
-        new LoginPageHelper().clickOnGearIcon();
+        new LoginTests().clickOnGearIcon();
 
     }
 
     @And("I click on log out button")
     public void iClickOnLogOutButton() {
-        new LoginPageHelper().clickOnLogOutBtn();
+        new LoginTests().clickOnLogOutBtn();
     }
 
     @Then("I log out")
     public void iLogOut() {
-        new LoginPageHelper().logout();
+        new LoginTests().logout();
     }
 }
 
