@@ -1,7 +1,7 @@
 package com.qa.runners;
 
 import com.qa.utils.DriverManager;
-import com.qa.utils.GlobalParamsSauce;
+import com.qa.utils.GlobalParams;
 import com.qa.utils.ServerManager;
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
@@ -23,7 +23,7 @@ import static io.cucumber.junit.CucumberOptions.SnippetType.CAMELCASE;
         ,snippets = CAMELCASE
         ,dryRun=false
         ,monochrome=true
-
+        ,tags = "@Android or @iOS"
 )
 
 public class MyRunnerTest {
@@ -34,14 +34,14 @@ public class MyRunnerTest {
                 /*
                 Local Development
                  */
-//                GlobalParams params = new GlobalParams();
-//                params.initializeGlobalParams();
+                GlobalParams params = new GlobalParams();
+                params.initializeGlobalParams();
 
                 /*
                 Sauce Labs
                  */
-                GlobalParamsSauce params = new GlobalParamsSauce();
-                params.initializeGlobalParams();
+//                GlobalParamsSauce params = new GlobalParamsSauce();
+//                params.initializeGlobalParams();
 
                 ThreadContext.put("ROUTINGKEY",params.getPlatformName() + "_"
                 + params.getDeviceName());

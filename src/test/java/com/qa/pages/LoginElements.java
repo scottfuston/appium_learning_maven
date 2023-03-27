@@ -1,15 +1,11 @@
 package com.qa.pages;
 
-
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.iOSXCUITFindBy;
-import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 
-public class LoginPageHelper extends BasePage{
-    public LoginPageHelper(){
-        super();
-    }
+public class LoginElements extends BasePage {
+
     @AndroidFindBy(id = "net.grandpad.puma:id/tiEmailEditText")
     @iOSXCUITFindBy(iOSNsPredicate = "value == \"Email\"")
     public WebElement emailInput;
@@ -92,76 +88,4 @@ public class LoginPageHelper extends BasePage{
     @AndroidFindBy(id = "android:id/button1")
     public WebElement confirmLogoutBtn;
 
-    public void enterUserName(String username)
-    {
-        waitForVisibility(emailInput);
-        clear(emailInput,"Clearing email input field");
-        sendKeys(emailInput,username,"Email user : " + username);
-        click(continueBtn,"Clicking Continue Button");
-
-    }
-    public void enterPassword(String password)
-    {
-        waitForVisibility(typeMyPassBtn);
-        click(typeMyPassBtn,"Clicking Type my Password Button");
-        sendKeys(passInputField,password,"Typing password " + password);
-    }
-    public void login()
-    {
-        waitForVisibility(logInSubmitBtn);
-        click(logInSubmitBtn,"Clicking LogIn Submit Button");
-
-    }
-
-    public void iAcceptNotifications() {
-        waitForVisibility(allowNotificationBtn);
-        click(allowNotificationBtn,"Clicking allow notifications");
-    }
-
-    public void iamLoggedIn()
-    {
-        waitForVisibility(feedGreeting);
-        click(feedGreeting);
-        waitForVisibility(homeTabBtn);
-        Assert.assertEquals("Home Button is displayed",true,homeTabBtn.isDisplayed());
-    }
-
-    public void callNumberIsDisplayed() {
-        Assert.assertEquals("Call Support Number is displayed",true,callNumberBtn.isDisplayed());
-    }
-
-    public void errorMessageIsDisplayed() {
-        waitForVisibility(emailErrorMessage);
-        Assert.assertEquals("Email error message is displayed",true,emailErrorMessage.isDisplayed());
-    }
-
-    public void gpLogoIsDisplayed() {
-        waitForVisibility(grandPadLogo);
-        Assert.assertEquals("Grandpad Log is displayed",true,grandPadLogo.isDisplayed());
-    }
-
-    public void clickOnProfileBtn()
-    {
-        waitForVisibility(profileBtn);
-        click(profileBtn,"clicking profile user button");
-    }
-
-    public void clickOnGearIcon()
-    {
-        waitForVisibility(settingsGear);
-        click(settingsGear,"clicking setting gear icon");
-    }
-
-    public void clickOnLogOutBtn()
-    {
-        waitForVisibility(logoutBtn);
-        click(logoutBtn,"clicking logout button");
-    }
-
-    public void logout()
-    {
-        waitForVisibility(logOutDialogBtn);
-        sendKeys(logoutBtn,"logout","typing logout");
-        click(logInSubmitBtn,"Confirming - Clicking logout Button");
-    }
 }
