@@ -1,38 +1,56 @@
-[Android_Google Pixel 6 Pro INFO ] 2023-03-28 10:26:38.519 ServerManager:19 - starting appium server
-[Android_Google Pixel 6 Pro INFO ] 2023-03-28 10:26:40.760 ServerManager:31 - Appium server started
-[Android_Google Pixel 6 Pro INFO ] 2023-03-28 10:26:40.779 DriverManager:29 - initializing Appium driver
-[Android_Google Pixel 6 Pro INFO ] 2023-03-28 10:26:40.802 PropertyManager:20 - fetching configLocal.properties
-[Android_Google Pixel 6 Pro INFO ] 2023-03-28 10:26:40.802 PropertyManager:25 - loading config properties
-[Android_Google Pixel 6 Pro INFO ] 2023-03-28 10:26:40.805 CapabilitiesManager:16 - Setting Capabilities
-[Android_Google Pixel 6 Pro INFO ] 2023-03-28 10:27:02.385 DriverManager:46 - Driver is initialized
-[Android_Google Pixel 6 Pro INFO ] 2023-03-28 10:27:02.686 PropertyManager:20 - fetching configLocal.properties
-[Android_Google Pixel 6 Pro INFO ] 2023-03-28 10:27:02.696 PropertyManager:20 - fetching configLocal.properties
-[Android_Google Pixel 6 Pro INFO ] 2023-03-28 10:27:02.697 PropertyManager:20 - fetching configLocal.properties
-[Android_Google Pixel 6 Pro INFO ] 2023-03-28 10:27:02.698 PropertyManager:20 - fetching configLocal.properties
-[Android_Google Pixel 6 Pro INFO ] 2023-03-28 10:27:05.203 PropertyManager:20 - fetching configLocal.properties
-[Android_Google Pixel 6 Pro INFO ] 2023-03-28 10:27:05.206 PropertyManager:20 - fetching configLocal.properties
-[Android_Google Pixel 6 Pro INFO ] 2023-03-28 10:27:05.206 PropertyManager:20 - fetching configLocal.properties
-[Android_Google Pixel 6 Pro INFO ] 2023-03-28 10:27:05.207 PropertyManager:20 - fetching configLocal.properties
-[Android_Google Pixel 6 Pro INFO ] 2023-03-28 10:27:06.288 BasePage:42 - Clearing email input field
-[Android_Google Pixel 6 Pro INFO ] 2023-03-28 10:27:08.603 BasePage:59 - Email user : josefake@grandpad.net
-[Android_Google Pixel 6 Pro INFO ] 2023-03-28 10:27:10.451 BasePage:53 - Clicking Continue Button
-[Android_Google Pixel 6 Pro INFO ] 2023-03-28 10:27:12.709 PropertyManager:20 - fetching configLocal.properties
-[Android_Google Pixel 6 Pro INFO ] 2023-03-28 10:27:12.712 PropertyManager:20 - fetching configLocal.properties
-[Android_Google Pixel 6 Pro INFO ] 2023-03-28 10:27:12.712 PropertyManager:20 - fetching configLocal.properties
-[Android_Google Pixel 6 Pro INFO ] 2023-03-28 10:27:12.714 PropertyManager:20 - fetching configLocal.properties
-[Android_Google Pixel 6 Pro INFO ] 2023-03-28 10:27:16.785 BasePage:42 - Clearing email input field
-[Android_Google Pixel 6 Pro INFO ] 2023-03-28 10:27:17.984 BasePage:59 - Email user : jose.virgen+02@grandpad.net
-[Android_Google Pixel 6 Pro INFO ] 2023-03-28 10:27:19.660 BasePage:53 - Clicking Continue Button
-[Android_Google Pixel 6 Pro INFO ] 2023-03-28 10:27:22.604 BasePage:53 - Clicking Type my Password Button
-[Android_Google Pixel 6 Pro INFO ] 2023-03-28 10:27:24.202 BasePage:59 - Typing password Test12345!
-[Android_Google Pixel 6 Pro INFO ] 2023-03-28 10:27:26.051 BasePage:53 - Clicking LogIn Submit Button
-[Android_Google Pixel 6 Pro INFO ] 2023-03-28 10:27:37.165 PropertyManager:20 - fetching configLocal.properties
-[Android_Google Pixel 6 Pro INFO ] 2023-03-28 10:27:37.167 PropertyManager:20 - fetching configLocal.properties
-[Android_Google Pixel 6 Pro INFO ] 2023-03-28 10:27:37.167 PropertyManager:20 - fetching configLocal.properties
-[Android_Google Pixel 6 Pro INFO ] 2023-03-28 10:27:37.168 PropertyManager:20 - fetching configLocal.properties
-[Android_Google Pixel 6 Pro INFO ] 2023-03-28 10:27:38.194 BasePage:53 - clicking profile user button
-[Android_Google Pixel 6 Pro INFO ] 2023-03-28 10:27:40.793 BasePage:53 - clicking setting gear icon
-[Android_Google Pixel 6 Pro INFO ] 2023-03-28 10:27:45.367 BasePage:103 - Swiping up
-[Android_Google Pixel 6 Pro INFO ] 2023-03-28 10:27:47.123 BasePage:53 - clicking logout button
-[Android_Google Pixel 6 Pro INFO ] 2023-03-28 10:27:49.834 BasePage:59 - typing logout
-[Android_Google Pixel 6 Pro INFO ] 2023-03-28 10:27:51.406 BasePage:53 - Confirming - Clicking logout Button
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 11:17:15.542 ServerManager:19 - starting appium server
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 11:17:17.451 ServerManager:31 - Appium server started
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 11:17:17.464 PropertyManager:20 - fetching configLocal.properties
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 11:17:17.465 PropertyManager:25 - loading config properties
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 11:17:17.469 DriverManager:35 - initializing Appium driver
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 11:17:17.489 PropertyManager:20 - fetching configLocal.properties
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 11:17:17.490 CapabilitiesManager:16 - Setting Capabilities
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 11:17:29.936 DriverManager:52 - Driver is initialized
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 11:17:30.258 PropertyManager:20 - fetching configLocal.properties
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 11:17:30.258 PropertyManager:20 - fetching configLocal.properties
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 11:17:30.271 PropertyManager:20 - fetching configLocal.properties
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 11:17:30.271 PropertyManager:20 - fetching configLocal.properties
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 11:17:30.272 PropertyManager:20 - fetching configLocal.properties
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 11:17:30.273 PropertyManager:20 - fetching configLocal.properties
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 11:17:30.274 PropertyManager:20 - fetching configLocal.properties
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 11:17:30.275 PropertyManager:20 - fetching configLocal.properties
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 11:17:33.051 PropertyManager:20 - fetching configLocal.properties
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 11:17:33.051 PropertyManager:20 - fetching configLocal.properties
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 11:17:33.052 PropertyManager:20 - fetching configLocal.properties
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 11:17:33.053 PropertyManager:20 - fetching configLocal.properties
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 11:17:33.053 PropertyManager:20 - fetching configLocal.properties
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 11:17:33.053 PropertyManager:20 - fetching configLocal.properties
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 11:17:33.053 PropertyManager:20 - fetching configLocal.properties
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 11:17:33.054 PropertyManager:20 - fetching configLocal.properties
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 11:17:33.275 BasePage:42 - Clearing email input field
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 11:17:33.939 BasePage:59 - Email user : josefake@grandpad.net
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 11:17:35.161 BasePage:53 - Clicking Continue Button
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 11:17:36.187 PropertyManager:20 - fetching configLocal.properties
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 11:17:36.188 PropertyManager:20 - fetching configLocal.properties
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 11:17:36.190 PropertyManager:20 - fetching configLocal.properties
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 11:17:36.191 PropertyManager:20 - fetching configLocal.properties
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 11:17:36.191 PropertyManager:20 - fetching configLocal.properties
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 11:17:36.191 PropertyManager:20 - fetching configLocal.properties
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 11:17:36.191 PropertyManager:20 - fetching configLocal.properties
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 11:17:36.192 PropertyManager:20 - fetching configLocal.properties
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 11:17:36.472 BasePage:42 - Clearing email input field
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 11:17:37.171 BasePage:59 - Email user : jose.virgen+02@grandpad.net
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 11:17:38.873 BasePage:53 - Clicking Continue Button
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 11:17:39.860 BasePage:53 - Clicking Type my Password Button
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 11:17:41.229 BasePage:59 - Typing password Test12345!
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 11:17:42.573 BasePage:53 - Clicking LogIn Submit Button
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 11:17:46.362 PropertyManager:20 - fetching configLocal.properties
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 11:17:46.363 PropertyManager:20 - fetching configLocal.properties
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 11:17:46.364 PropertyManager:20 - fetching configLocal.properties
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 11:17:46.365 PropertyManager:20 - fetching configLocal.properties
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 11:17:46.365 PropertyManager:20 - fetching configLocal.properties
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 11:17:46.365 PropertyManager:20 - fetching configLocal.properties
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 11:17:46.366 PropertyManager:20 - fetching configLocal.properties
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 11:17:46.367 PropertyManager:20 - fetching configLocal.properties
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 11:17:46.503 BasePage:53 - clicking profile user button
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 11:17:48.615 BasePage:53 - clicking setting gear icon
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 11:17:49.993 BasePage:103 - Swiping up
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 11:17:50.782 BasePage:53 - clicking logout button
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 11:17:51.787 BasePage:59 - typing logout
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 11:17:53.041 BasePage:53 - Confirming - Clicking logout Button
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 11:17:53.286 PropertyManager:20 - fetching configLocal.properties

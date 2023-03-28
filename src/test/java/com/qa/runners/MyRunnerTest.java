@@ -10,6 +10,8 @@ import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.runner.RunWith;
 
+import java.io.IOException;
+
 import static io.cucumber.junit.CucumberOptions.SnippetType.CAMELCASE;
 
 @RunWith(Cucumber.class)
@@ -41,7 +43,7 @@ public class MyRunnerTest {
                 new DriverManager().initializeDriver();
         }
         @AfterClass
-        public static void quit(){
+        public static void quit() throws IOException {
                 DriverManager driverManager = new DriverManager();
                 if(driverManager.getDriver() != null){
                         driverManager.getDriver().quit();
