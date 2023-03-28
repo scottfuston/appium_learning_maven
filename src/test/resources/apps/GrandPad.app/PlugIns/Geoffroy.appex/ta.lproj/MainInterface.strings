@@ -1,0 +1,27 @@
+/* Class = "UILabel"; text = "For best results, please stay on this screen for the duration of the upload, or open the GrandPad app."; ObjectID = "ASx-5M-HrY"; */
+"ASx-5M-HrY.text" = "சிறந்த முடிவுகளுக்கு, பதிவேற்றும் காலம் வரை இந்தத் திரையில் இருக்கவும் அல்லது GrandPad பயன்பாட்டைத் திறக்கவும்.";
+
+/* Class = "UILabel"; text = "0 Items"; ObjectID = "CnM-XT-2gy"; */
+"CnM-XT-2gy.text" = "0 பொருட்கள்";
+
+/* Class = "UILabel"; text = "Uploading media, 0 of 0 complete"; ObjectID = "jF0-H4-mc1"; */
+"jF0-H4-mc1.text" = "மீடியாவைப் பதிவேற்றுகிறது, 0 இல் 0 முடிந்தது";
+
+/* Class = "UINavigationItem"; title = "GrandPad"; ObjectID = "l2c-AO-9cO"; */
+"l2c-AO-9cO.title" = "கிராண்ட்பேட்";
+
+/* Class = "UILabel"; text = "Caption"; ObjectID = "Obb-CL-DEk"; */
+"Obb-CL-DEk.text" = "தலைப்பு";
+
+/* Class = "UINavigationItem"; title = "GrandPad"; ObjectID = "u5U-9D-Tf9"; */
+"u5U-9D-Tf9.title" = "கிராண்ட்பேட்";
+
+/* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "UBF-ao-5xS"; */
+"UBF-ao-5xS.text" = "லோரெம் இப்சம் டோலர் சிட் எலிட் லாமெட், கன்செக்டெட்டூர் சில்லியம் அடிபிசிசிங் பெக்கு, செட் டூ ஈயுஸ்மோட் டெம்போர் இன்சிடிடுண்ட் யுட் லேபர் மற்றும் டோலோர் மேக்னா அலிக்வா. உத் எனிம் அட் மினிம் வெனியம், க்விஸ் நாஸ்ட்ரட் உடற்பயிற்சி உல்லம்கோ லேபரிஸ் நிசி யுட் அலிக்விப் எக்ஸ் ஈயா கொமோடோ கான்செக்வாட். டுயிஸ் ஆட் இயூரே டோலர் இன் ரெப்ரெஹெண்டரிட் இன் வால்ப்டேட் வெலிட் எஸ்ஸெ சில்லம் டோலோர் யூ ஃபுகியாட் நல்லா பரியதுர். எக்செப்டியூர் சின்ட் ஓகேகாட் குபிடாடட் நோன் ப்ரோடென்ட், சன்ட் இன் கல்பா குய் ஆஃபிசியா டெஸரண்ட் மோலிட் அனிம் ஐடி எஸ்ட் லேபர். நாம் லிபர் தே மனசாட்சிக்கு காரணி டும் போஎன் லெகும் ஓடியோக் சிவியுடா.";
+
+/* Class = "UILabel"; text = "Add a caption..."; ObjectID = "xag-WG-3tc"; */
+"xag-WG-3tc.text" = "ஒரு தலைப்பை சேர்க்க...";
+
+/* Class = "UIBarButtonItem"; title = "Share"; ObjectID = "zKV-hv-1MN"; */
+"zKV-hv-1MN.title" = "பகிர்";
+

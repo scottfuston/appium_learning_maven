@@ -1,0 +1,27 @@
+/* Class = "UILabel"; text = "For best results, please stay on this screen for the duration of the upload, or open the GrandPad app."; ObjectID = "ASx-5M-HrY"; */
+"ASx-5M-HrY.text" = "Aby uzyskać najlepsze wyniki, pozostań na tym ekranie przez cały czas przesyłania lub otwórz aplikację GrandPad.";
+
+/* Class = "UILabel"; text = "0 Items"; ObjectID = "CnM-XT-2gy"; */
+"CnM-XT-2gy.text" = "0 Przedmioty";
+
+/* Class = "UILabel"; text = "Uploading media, 0 of 0 complete"; ObjectID = "jF0-H4-mc1"; */
+"jF0-H4-mc1.text" = "Przesyłanie multimediów, ukończono 0 z 0";
+
+/* Class = "UINavigationItem"; title = "GrandPad"; ObjectID = "l2c-AO-9cO"; */
+"l2c-AO-9cO.title" = "Dziadek";
+
+/* Class = "UILabel"; text = "Caption"; ObjectID = "Obb-CL-DEk"; */
+"Obb-CL-DEk.text" = "Podpis";
+
+/* Class = "UINavigationItem"; title = "GrandPad"; ObjectID = "u5U-9D-Tf9"; */
+"u5U-9D-Tf9.title" = "Dziadek";
+
+/* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "UBF-ao-5xS"; */
+"UBF-ao-5xS.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
+
+/* Class = "UILabel"; text = "Add a caption..."; ObjectID = "xag-WG-3tc"; */
+"xag-WG-3tc.text" = "Dodaj podpis...";
+
+/* Class = "UIBarButtonItem"; title = "Share"; ObjectID = "zKV-hv-1MN"; */
+"zKV-hv-1MN.title" = "Dzielić";
+
