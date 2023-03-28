@@ -31,17 +31,8 @@ public class MyRunnerTest {
 
         @BeforeClass
         public static void initialize() throws Exception {
-                /*
-                Local Development
-                 */
                 GlobalParams params = new GlobalParams();
                 params.initializeGlobalParams();
-
-                /*
-                Sauce Labs
-                 */
-//                GlobalParamsSauce params = new GlobalParamsSauce();
-//                params.initializeGlobalParams();
 
                 ThreadContext.put("ROUTINGKEY",params.getPlatformName() + "_"
                 + params.getDeviceName());
