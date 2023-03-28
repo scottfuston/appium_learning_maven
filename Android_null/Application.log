@@ -1,51 +1,16 @@
-[Android_null INFO ] 2023-03-28 12:15:08.356 ServerManager:19 - starting appium server
-[Android_null INFO ] 2023-03-28 12:15:11.386 ServerManager:31 - Appium server started
-[Android_null INFO ] 2023-03-28 12:15:11.405 PropertyManager:20 - fetching configLocal.properties
-[Android_null INFO ] 2023-03-28 12:15:11.407 DriverManager:35 - initializing Appium driver
-[Android_null INFO ] 2023-03-28 12:15:11.434 PropertyManager:20 - fetching configLocal.properties
-[Android_null INFO ] 2023-03-28 12:15:11.435 CapabilitiesManager:17 - Setting Capabilities
-[Android_null INFO ] 2023-03-28 12:15:31.755 DriverManager:52 - Driver is initialized
-[Android_null INFO ] 2023-03-28 12:15:32.242 PropertyManager:20 - fetching configLocal.properties
-[Android_null INFO ] 2023-03-28 12:15:32.243 PropertyManager:20 - fetching configLocal.properties
-[Android_null INFO ] 2023-03-28 12:15:32.257 PropertyManager:20 - fetching configLocal.properties
-[Android_null INFO ] 2023-03-28 12:15:32.258 PropertyManager:20 - fetching configLocal.properties
-[Android_null INFO ] 2023-03-28 12:15:32.260 PropertyManager:20 - fetching configLocal.properties
-[Android_null INFO ] 2023-03-28 12:15:32.260 PropertyManager:20 - fetching configLocal.properties
-[Android_null INFO ] 2023-03-28 12:15:32.262 PropertyManager:20 - fetching configLocal.properties
-[Android_null INFO ] 2023-03-28 12:15:32.262 PropertyManager:20 - fetching configLocal.properties
-[Android_null INFO ] 2023-03-28 12:15:33.434 PropertyManager:20 - fetching configLocal.properties
-[Android_null INFO ] 2023-03-28 12:15:33.434 PropertyManager:20 - fetching configLocal.properties
-[Android_null INFO ] 2023-03-28 12:15:33.436 PropertyManager:20 - fetching configLocal.properties
-[Android_null INFO ] 2023-03-28 12:15:33.436 PropertyManager:20 - fetching configLocal.properties
-[Android_null INFO ] 2023-03-28 12:15:33.437 PropertyManager:20 - fetching configLocal.properties
-[Android_null INFO ] 2023-03-28 12:15:33.437 PropertyManager:20 - fetching configLocal.properties
-[Android_null INFO ] 2023-03-28 12:15:33.437 PropertyManager:20 - fetching configLocal.properties
-[Android_null INFO ] 2023-03-28 12:15:33.437 PropertyManager:20 - fetching configLocal.properties
-[Android_null INFO ] 2023-03-28 12:15:33.567 BasePage:42 - Clearing email input field
-[Android_null INFO ] 2023-03-28 12:15:34.148 BasePage:59 - Email user : josefake@grandpad.net
-[Android_null INFO ] 2023-03-28 12:15:35.247 BasePage:53 - Clicking Continue Button
-[Android_null INFO ] 2023-03-28 12:15:36.371 PropertyManager:20 - fetching configLocal.properties
-[Android_null INFO ] 2023-03-28 12:15:36.374 PropertyManager:20 - fetching configLocal.properties
-[Android_null INFO ] 2023-03-28 12:15:36.376 PropertyManager:20 - fetching configLocal.properties
-[Android_null INFO ] 2023-03-28 12:15:36.377 PropertyManager:20 - fetching configLocal.properties
-[Android_null INFO ] 2023-03-28 12:15:36.377 PropertyManager:20 - fetching configLocal.properties
-[Android_null INFO ] 2023-03-28 12:15:36.377 PropertyManager:20 - fetching configLocal.properties
-[Android_null INFO ] 2023-03-28 12:15:36.377 PropertyManager:20 - fetching configLocal.properties
-[Android_null INFO ] 2023-03-28 12:15:36.377 PropertyManager:20 - fetching configLocal.properties
-[Android_null INFO ] 2023-03-28 12:15:36.486 BasePage:42 - Clearing email input field
-[Android_null INFO ] 2023-03-28 12:15:37.023 BasePage:59 - Email user : jose.virgen+02@grandpad.net
-[Android_null INFO ] 2023-03-28 12:15:37.593 BasePage:53 - Clicking Continue Button
-[Android_null INFO ] 2023-03-28 12:15:38.356 BasePage:53 - Clicking Type my Password Button
-[Android_null INFO ] 2023-03-28 12:15:39.263 BasePage:59 - Typing password Test12345!
-[Android_null INFO ] 2023-03-28 12:15:39.914 BasePage:53 - Clicking LogIn Submit Button
-[Android_null INFO ] 2023-03-28 12:15:43.948 PropertyManager:20 - fetching configLocal.properties
-[Android_null INFO ] 2023-03-28 12:15:43.949 PropertyManager:20 - fetching configLocal.properties
-[Android_null INFO ] 2023-03-28 12:15:43.950 PropertyManager:20 - fetching configLocal.properties
-[Android_null INFO ] 2023-03-28 12:15:43.950 PropertyManager:20 - fetching configLocal.properties
-[Android_null INFO ] 2023-03-28 12:15:43.950 PropertyManager:20 - fetching configLocal.properties
-[Android_null INFO ] 2023-03-28 12:15:43.950 PropertyManager:20 - fetching configLocal.properties
-[Android_null INFO ] 2023-03-28 12:15:43.950 PropertyManager:20 - fetching configLocal.properties
-[Android_null INFO ] 2023-03-28 12:15:43.951 PropertyManager:20 - fetching configLocal.properties
-[Android_null INFO ] 2023-03-28 12:15:44.011 BasePage:53 - clicking profile user button
-[Android_null INFO ] 2023-03-28 12:15:45.105 BasePage:53 - clicking setting gear icon
-[Android_null INFO ] 2023-03-28 12:15:46.132 PropertyManager:20 - fetching configLocal.properties
+[Android_null INFO ] 2023-03-28 13:03:48.734 ServerManager:19 - starting appium server
+[Android_null INFO ] 2023-03-28 13:03:51.621 ServerManager:31 - Appium server started
+[Android_null INFO ] 2023-03-28 13:03:51.645 DriverManager:34 - initializing Appium driver
+[Android_null INFO ] 2023-03-28 13:03:51.674 CapabilitiesManager:17 - Setting Capabilities
+[Android_null INFO ] 2023-03-28 13:04:04.312 DriverManager:49 - Driver is initialized
+[Android_null INFO ] 2023-03-28 13:04:06.194 BasePage:42 - Clearing email input field
+[Android_null INFO ] 2023-03-28 13:04:06.825 BasePage:59 - Email user : josefake@grandpad.net
+[Android_null INFO ] 2023-03-28 13:04:08.025 BasePage:53 - Clicking Continue Button
+[Android_null INFO ] 2023-03-28 13:04:09.152 BasePage:42 - Clearing email input field
+[Android_null INFO ] 2023-03-28 13:04:09.761 BasePage:59 - Email user : jose.virgen+02@grandpad.net
+[Android_null INFO ] 2023-03-28 13:04:10.884 BasePage:53 - Clicking Continue Button
+[Android_null INFO ] 2023-03-28 13:04:11.762 BasePage:53 - Clicking Type my Password Button
+[Android_null INFO ] 2023-03-28 13:04:12.599 BasePage:59 - Typing password Test12345!
+[Android_null INFO ] 2023-03-28 13:04:13.849 BasePage:53 - Clicking LogIn Submit Button
+[Android_null INFO ] 2023-03-28 13:04:17.883 BasePage:53 - clicking profile user button
+[Android_null INFO ] 2023-03-28 13:04:19.383 BasePage:53 - clicking setting gear icon
