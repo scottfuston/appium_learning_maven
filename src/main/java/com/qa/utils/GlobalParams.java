@@ -78,9 +78,9 @@ public class GlobalParams {
     public void initializeGlobalParams(){
         GlobalParams params = new GlobalParams();
 
-        params.setPlatformName(System.getProperty("platformName", "iOS"));
-        params.setUDID(System.getProperty("udid", "a467064c67a0494575a62811bb0b6937062319fd"));
-        params.setDeviceName(System.getProperty("deviceName", "Grandpad QA iPhone 6s"));
+//        params.setPlatformName(System.getProperty("platformName", "iOS"));
+//        params.setUDID(System.getProperty("udid", "a467064c67a0494575a62811bb0b6937062319fd"));
+//        params.setDeviceName(System.getProperty("deviceName", "Grandpad QA iPhone 6s"));
 
         /*
           Android Real Device
@@ -90,7 +90,18 @@ public class GlobalParams {
 //          params.setUDID(System.getProperty("udid", "1B241FDEE005GG"));
 //          params.setDeviceName(System.getProperty("deviceName", "Pixel 6 Pro"));
 
+        //sauce-real android
+        params.setPlatformName(System.getProperty("platformName", "Android"));
+        params.setDeviceName(System.getProperty("deviceName", "Google Pixel 6 Pro"));
+        params.setUDID(System.getProperty("udid", "Google_Pixel_6_pro_13_real_us"));
 
+
+        //params.setPlatformName(System.getProperty("platformName", "iOS"));
+        //params.setUDID(System.getProperty("udid", "a467064c67a0494575a62811bb0b6937062319fd"));
+        //params.setDeviceName(System.getProperty("deviceName", "iPhone 14 Pro Max"));
+        //params.setUDID(System.getProperty("udid", "iPhone_14_Pro_Max_real_us"));
+        //params.setXcodeSignInID(System.getProperty("xcodeOrgId","8EEWH47E3V"));
+        //params.setxcodeOrgId(System.getProperty("xcodeSigningId","iPhone Developer"));
 
         switch(params.getPlatformName()){
             case "Android":

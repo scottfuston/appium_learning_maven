@@ -21,8 +21,7 @@ public class DriverManager {
 
     public void initializeDriver() throws Exception {
         AppiumDriver driver = null;
-    //     GlobalParams params = new GlobalParams();
-        GlobalParamsSauce params = new GlobalParamsSauce();
+        GlobalParams params = new GlobalParams();
         URL url = new URL("https://@ondemand.us-west-1.saucelabs.com:443/wd/hub");
         if(driver == null){
             try{
@@ -31,14 +30,14 @@ public class DriverManager {
                 switch(params.getPlatformName()){
                     case "Android":
                     //    saucelabs
-                        driver = new AndroidDriver(url, new CapabilitiesManager().getCaps());
+                          driver = new AndroidDriver(url, new CapabilitiesManager().getCaps());
 
                           //local
-                          //driver = new AndroidDriver(new ServerManager().getServer().getUrl(), new CapabilitiesManager().getCaps());
+                     //     driver = new AndroidDriver(new ServerManager().getServer().getUrl(), new CapabilitiesManager().getCaps());
                         break;
                     case "iOS":
-                       // driver = new IOSDriver(new ServerManager().getServer().getUrl(), new CapabilitiesManager().getCaps());
-                        driver = new IOSDriver(url, new CapabilitiesManager().getCaps());
+                          driver = new IOSDriver(new ServerManager().getServer().getUrl(), new CapabilitiesManager().getCaps());
+                     //   driver = new IOSDriver(url, new CapabilitiesManager().getCaps());
                         break;
                 }
                 if(driver == null){

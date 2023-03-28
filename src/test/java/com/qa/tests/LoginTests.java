@@ -1,11 +1,14 @@
 package com.qa.tests;
+
 import com.qa.pages.BasePage;
 import com.qa.pages.LoginElements;
 import org.junit.Assert;
 
+import java.io.IOException;
+
 public class LoginTests extends BasePage {
     LoginElements loginEl = new LoginElements();
-    public LoginTests(){
+    public LoginTests() throws IOException {
         super();
     }
 
@@ -50,6 +53,7 @@ public class LoginTests extends BasePage {
     public void errorMessageIsDisplayed() {
         waitForVisibility(loginEl.emailErrorMessage);
         Assert.assertEquals("Email error message is displayed",true,loginEl.emailErrorMessage.isDisplayed());
+
     }
 
     public void gpLogoIsDisplayed() {
@@ -71,14 +75,15 @@ public class LoginTests extends BasePage {
 
     public void clickOnLogOutBtn()
     {
-        waitForVisibility(loginEl.logoutBtn);
-        click(loginEl.logoutBtn,"clicking logout button");
+            scrollGesture(driver,loginEl.notificationSettingsPage);
+            waitForVisibility(loginEl.logoutBtn);
+            click(loginEl.logoutBtn,"clicking logout button");
     }
 
     public void logout()
     {
-        waitForVisibility(loginEl.logOutDialogBtn);
-        sendKeys(loginEl.logoutBtn,"logout","typing logout");
-        click(loginEl.logInSubmitBtn,"Confirming - Clicking logout Button");
+        waitForVisibility(loginEl.logoutDialog);
+        sendKeys(loginEl.logOutDialogInput,"logout","typing logout");
+        click(loginEl.confirmLogoutBtn,"Confirming - Clicking logout Button");
     }
 }
