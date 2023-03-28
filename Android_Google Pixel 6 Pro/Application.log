@@ -1,21 +1,38 @@
-[Android_Google Pixel 6 Pro INFO ] 2023-03-28 08:55:53.295 ServerManager:19 - starting appium server
-[Android_Google Pixel 6 Pro INFO ] 2023-03-28 08:55:56.013 ServerManager:31 - Appium server started
-[Android_Google Pixel 6 Pro INFO ] 2023-03-28 08:55:56.034 DriverManager:29 - initializing Appium driver
-[Android_Google Pixel 6 Pro INFO ] 2023-03-28 08:55:56.055 PropertyManager:17 - loading config properties
-[Android_Google Pixel 6 Pro INFO ] 2023-03-28 08:55:56.058 CapabilitiesManager:16 - Setting Capabilities
-[Android_Google Pixel 6 Pro INFO ] 2023-03-28 08:56:23.256 DriverManager:46 - Driver is initialized
-[Android_Google Pixel 6 Pro INFO ] 2023-03-28 08:56:27.392 BasePage:42 - Clearing email input field
-[Android_Google Pixel 6 Pro INFO ] 2023-03-28 08:56:29.232 BasePage:59 - Email user : josefake@grandpad.net
-[Android_Google Pixel 6 Pro INFO ] 2023-03-28 08:56:34.900 BasePage:53 - Clicking Continue Button
-[Android_Google Pixel 6 Pro INFO ] 2023-03-28 08:56:40.281 BasePage:42 - Clearing email input field
-[Android_Google Pixel 6 Pro INFO ] 2023-03-28 08:56:41.864 BasePage:59 - Email user : jose.virgen+02@grandpad.net
-[Android_Google Pixel 6 Pro INFO ] 2023-03-28 08:56:43.556 BasePage:53 - Clicking Continue Button
-[Android_Google Pixel 6 Pro INFO ] 2023-03-28 08:56:45.821 BasePage:53 - Clicking Type my Password Button
-[Android_Google Pixel 6 Pro INFO ] 2023-03-28 08:56:47.511 BasePage:59 - Typing password Test12345!
-[Android_Google Pixel 6 Pro INFO ] 2023-03-28 08:56:49.319 BasePage:53 - Clicking LogIn Submit Button
-[Android_Google Pixel 6 Pro INFO ] 2023-03-28 08:56:57.482 BasePage:53 - clicking profile user button
-[Android_Google Pixel 6 Pro INFO ] 2023-03-28 08:57:01.648 BasePage:53 - clicking setting gear icon
-[Android_Google Pixel 6 Pro INFO ] 2023-03-28 08:57:04.103 BasePage:103 - Swiping up
-[Android_Google Pixel 6 Pro INFO ] 2023-03-28 08:57:05.758 BasePage:53 - clicking logout button
-[Android_Google Pixel 6 Pro INFO ] 2023-03-28 08:57:07.522 BasePage:59 - typing logout
-[Android_Google Pixel 6 Pro INFO ] 2023-03-28 08:57:09.247 BasePage:53 - Confirming - Clicking logout Button
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 10:26:38.519 ServerManager:19 - starting appium server
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 10:26:40.760 ServerManager:31 - Appium server started
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 10:26:40.779 DriverManager:29 - initializing Appium driver
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 10:26:40.802 PropertyManager:20 - fetching configLocal.properties
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 10:26:40.802 PropertyManager:25 - loading config properties
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 10:26:40.805 CapabilitiesManager:16 - Setting Capabilities
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 10:27:02.385 DriverManager:46 - Driver is initialized
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 10:27:02.686 PropertyManager:20 - fetching configLocal.properties
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 10:27:02.696 PropertyManager:20 - fetching configLocal.properties
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 10:27:02.697 PropertyManager:20 - fetching configLocal.properties
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 10:27:02.698 PropertyManager:20 - fetching configLocal.properties
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 10:27:05.203 PropertyManager:20 - fetching configLocal.properties
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 10:27:05.206 PropertyManager:20 - fetching configLocal.properties
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 10:27:05.206 PropertyManager:20 - fetching configLocal.properties
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 10:27:05.207 PropertyManager:20 - fetching configLocal.properties
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 10:27:06.288 BasePage:42 - Clearing email input field
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 10:27:08.603 BasePage:59 - Email user : josefake@grandpad.net
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 10:27:10.451 BasePage:53 - Clicking Continue Button
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 10:27:12.709 PropertyManager:20 - fetching configLocal.properties
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 10:27:12.712 PropertyManager:20 - fetching configLocal.properties
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 10:27:12.712 PropertyManager:20 - fetching configLocal.properties
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 10:27:12.714 PropertyManager:20 - fetching configLocal.properties
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 10:27:16.785 BasePage:42 - Clearing email input field
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 10:27:17.984 BasePage:59 - Email user : jose.virgen+02@grandpad.net
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 10:27:19.660 BasePage:53 - Clicking Continue Button
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 10:27:22.604 BasePage:53 - Clicking Type my Password Button
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 10:27:24.202 BasePage:59 - Typing password Test12345!
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 10:27:26.051 BasePage:53 - Clicking LogIn Submit Button
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 10:27:37.165 PropertyManager:20 - fetching configLocal.properties
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 10:27:37.167 PropertyManager:20 - fetching configLocal.properties
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 10:27:37.167 PropertyManager:20 - fetching configLocal.properties
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 10:27:37.168 PropertyManager:20 - fetching configLocal.properties
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 10:27:38.194 BasePage:53 - clicking profile user button
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 10:27:40.793 BasePage:53 - clicking setting gear icon
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 10:27:45.367 BasePage:103 - Swiping up
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 10:27:47.123 BasePage:53 - clicking logout button
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 10:27:49.834 BasePage:59 - typing logout
+[Android_Google Pixel 6 Pro INFO ] 2023-03-28 10:27:51.406 BasePage:53 - Confirming - Clicking logout Button
