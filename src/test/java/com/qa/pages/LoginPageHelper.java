@@ -6,8 +6,10 @@ import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 
+import java.io.IOException;
+
 public class LoginPageHelper extends BasePage{
-    public LoginPageHelper(){
+    public LoginPageHelper() throws IOException {
         super();
     }
     @AndroidFindBy(id = "net.grandpad.puma:id/tiEmailEditText")

@@ -9,8 +9,16 @@ public class PropertyManager {
     TestUtils utils = new TestUtils();
 
     public Properties getProps() throws IOException {
+
         InputStream is = null;
-        String propsFileName = "config.properties";
+        String propsFileName= "configLocal.properties";
+
+        if(!System.getenv().containsKey("DEV") ){
+            utils.log().info("fetching config.properties");
+            propsFileName = "config.properties";
+        }else{
+            utils.log().info("fetching configLocal.properties");
+        }
 
         if(props.isEmpty()){
             try{

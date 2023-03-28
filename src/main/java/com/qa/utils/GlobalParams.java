@@ -1,5 +1,8 @@
 package com.qa.utils;
 
+import java.io.IOException;
+import java.util.Properties;
+
 public class GlobalParams {
 
     private static ThreadLocal<String> platformName = new ThreadLocal<String>();
@@ -75,8 +78,9 @@ public class GlobalParams {
         webkitDebugProxyPort.set(webkitDebugProxyPort2);
     }
 
-    public void initializeGlobalParams(){
+    public void initializeGlobalParams() throws IOException {
         GlobalParams params = new GlobalParams();
+        Properties props = new PropertyManager().getProps();
 
 //        params.setPlatformName(System.getProperty("platformName", "iOS"));
 //        params.setUDID(System.getProperty("udid", "a467064c67a0494575a62811bb0b6937062319fd"));
@@ -91,9 +95,9 @@ public class GlobalParams {
 //          params.setDeviceName(System.getProperty("deviceName", "Pixel 6 Pro"));
 
         //sauce-real android
-        params.setPlatformName(System.getProperty("platformName", "Android"));
-        params.setDeviceName(System.getProperty("deviceName", "Google Pixel 6 Pro"));
-        params.setUDID(System.getProperty("udid", "Google_Pixel_6_pro_13_real_us"));
+        params.setPlatformName(System.getProperty("platformName", props.getProperty("defaultPlatformName")));
+        params.setDeviceName(System.getProperty("deviceName"));
+        params.setUDID(System.getProperty("udid"));
 
 
         //params.setPlatformName(System.getProperty("platformName", "iOS"));

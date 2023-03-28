@@ -6,10 +6,15 @@ import io.appium.java_client.ios.IOSDriver;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.Properties;
 
 public class DriverManager {
     private static ThreadLocal<AppiumDriver> driver = new ThreadLocal<>();
     TestUtils utils = new TestUtils();
+    Properties props = new PropertyManager().getProps();
+
+    public DriverManager() throws IOException {
+    }
 
     public AppiumDriver getDriver(){
         return driver.get();
@@ -22,7 +27,8 @@ public class DriverManager {
     public void initializeDriver() throws Exception {
         AppiumDriver driver = null;
         GlobalParams params = new GlobalParams();
-        URL url = new URL("https://@ondemand.us-west-1.saucelabs.com:443/wd/hub");
+        URL url = new URL(props.getProperty("appiumURL"));
+
         if(driver == null){
             try{
 

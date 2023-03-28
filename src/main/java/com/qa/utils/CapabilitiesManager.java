@@ -18,8 +18,8 @@ public class CapabilitiesManager {
             caps.setCapability(MobileCapabilityType.PLATFORM_NAME,params.getPlatformName());
             caps.setCapability(MobileCapabilityType.UDID,params.getUDID());
             caps.setCapability(MobileCapabilityType.DEVICE_NAME,params.getDeviceName());
-            //caps.setCapability("xcodeOrgId",params.getxcodeOrgId());
-            //caps.setCapability("xcodeSigningId",params.getXcodeSignInID());
+            //caps.setCapability("xcodeOrgId", props.getProperty("xcodeOrdId"));
+            //caps.setCapability("xcodeSigningId", props.getProperty("xcodeSigningId"));
          //   caps.setCapability("autoAcceptAlerts",params.getAutoAcceptAlerts());
 
             switch (params.getPlatformName()) {
@@ -35,7 +35,7 @@ public class CapabilitiesManager {
                     //String androidAppUrl = System.getProperty("user.dir") + File.separator + "src" + File.separator + "test"
                     //        + File.separator + "resources" + File.separator + "apps" + File.separator + "PUMA-HEAD-47926-v8a.apk";
                     //utils.log().info("appUrl is" + androidAppUrl);
-                    caps.setCapability("appium:app", "storage:filename=PUMA-HEAD-47777-v7a.apk");
+                    caps.setCapability("appium:app", props.getProperty("androidAppLocation"));
                     MutableCapabilities sauceOptions = new MutableCapabilities();
                     sauceOptions.setCapability("username",  System.getenv("SAUCE_USERNAME"));
                     sauceOptions.setCapability("accessKey", System.getenv("SAUCE_ACCESS_KEY"));
