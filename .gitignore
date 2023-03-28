@@ -11,7 +11,7 @@ out/
 *.iml
 *.ipr
 *.iws
-/target/**
+target/
 
 ##############################
 ## Java
