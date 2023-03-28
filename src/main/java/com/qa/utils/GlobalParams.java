@@ -82,30 +82,9 @@ public class GlobalParams {
         GlobalParams params = new GlobalParams();
         Properties props = new PropertyManager().getProps();
 
-//        params.setPlatformName(System.getProperty("platformName", "iOS"));
-//        params.setUDID(System.getProperty("udid", "a467064c67a0494575a62811bb0b6937062319fd"));
-//        params.setDeviceName(System.getProperty("deviceName", "Grandpad QA iPhone 6s"));
-
-        /*
-          Android Real Device
-
-         */
-//          params.setPlatformName(System.getProperty("platformName", "Android"));
-//          params.setUDID(System.getProperty("udid", "1B241FDEE005GG"));
-//          params.setDeviceName(System.getProperty("deviceName", "Pixel 6 Pro"));
-
-        //sauce-real android
         params.setPlatformName(System.getProperty("platformName", props.getProperty("defaultPlatformName")));
         params.setDeviceName(System.getProperty("deviceName"));
         params.setUDID(System.getProperty("udid"));
-
-
-        //params.setPlatformName(System.getProperty("platformName", "iOS"));
-        //params.setUDID(System.getProperty("udid", "a467064c67a0494575a62811bb0b6937062319fd"));
-        //params.setDeviceName(System.getProperty("deviceName", "iPhone 14 Pro Max"));
-        //params.setUDID(System.getProperty("udid", "iPhone_14_Pro_Max_real_us"));
-        //params.setXcodeSignInID(System.getProperty("xcodeOrgId","8EEWH47E3V"));
-        //params.setxcodeOrgId(System.getProperty("xcodeSigningId","iPhone Developer"));
 
         switch(params.getPlatformName()){
             case "Android":
