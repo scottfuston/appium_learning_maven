@@ -1,2 +1,0 @@
-[${ctx:ROUTINGKEY} INFO ] 2023-03-28 13:03:48.710 PropertyManager:22 - fetching configLocal.properties
-[${ctx:ROUTINGKEY} INFO ] 2023-03-28 13:03:48.729 PropertyManager:26 - loading config properties

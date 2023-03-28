@@ -36,6 +36,7 @@ public class PropertyManager {
                 }
             }
         }
+
         return props;
     }
 }
