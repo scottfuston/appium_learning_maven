@@ -29,8 +29,6 @@ import static io.cucumber.junit.CucumberOptions.SnippetType.CAMELCASE;
 )
 
 public class MyRunnerTest {
-
-
         @BeforeClass
         public static void initialize() throws Exception {
                 GlobalParams params = new GlobalParams();

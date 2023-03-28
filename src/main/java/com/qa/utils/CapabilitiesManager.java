@@ -4,6 +4,7 @@ import io.appium.java_client.remote.MobileCapabilityType;
 import org.openqa.selenium.MutableCapabilities;
 
 import java.io.IOException;
+import java.util.Objects;
 import java.util.Properties;
 
 public class CapabilitiesManager {
@@ -25,17 +26,18 @@ public class CapabilitiesManager {
             switch (params.getPlatformName()) {
                 case "Android" -> {
                     caps.setCapability(MobileCapabilityType.AUTOMATION_NAME, props.getProperty("androidAutomationName"));
-                    caps.setCapability("appPackage", props.getProperty("androidAppPackage"));
-                    caps.setCapability("appActivity", props.getProperty("androidAppActivity"));
+                    //caps.setCapability("appPackage", props.getProperty("androidAppPackage"));
+                    //caps.setCapability("appActivity", props.getProperty("androidAppActivity"));
+
+                    if(!Objects.equals(props.getProperty("deviceType"), "real")){
+                        caps.setCapability("avd", props.getProperty("emulator"));
+                        caps.setCapability("avdLaunchTimeout", 180000);
+                    }
                     caps.setCapability("systemPort", params.getSystemPort());
                     caps.setCapability("chromeDriverPort", params.getChromeDriverPort());
                     caps.setCapability("autoGrantPermissions", "true");
-
-                    //  String androidAppUrl = getClass().getResource(props.getProperty("androidAppLocation")).getFile();
-                    //String androidAppUrl = System.getProperty("user.dir") + File.separator + "src" + File.separator + "test"
-                    //        + File.separator + "resources" + File.separator + "apps" + File.separator + "PUMA-HEAD-47926-v8a.apk";
-                    //utils.log().info("appUrl is" + androidAppUrl);
                     caps.setCapability("appium:app", props.getProperty("androidAppLocation"));
+
                     MutableCapabilities sauceOptions = new MutableCapabilities();
                     sauceOptions.setCapability("username",  System.getenv("SAUCE_USERNAME"));
                     sauceOptions.setCapability("accessKey", System.getenv("SAUCE_ACCESS_KEY"));

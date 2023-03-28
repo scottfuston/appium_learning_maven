@@ -11,16 +11,17 @@ public class PropertyManager {
     public Properties getProps() throws IOException {
 
         InputStream is = null;
-        String propsFileName= "configLocal.properties";
-
-        if(!System.getenv().containsKey("DEV") ){
-            utils.log().info("fetching config.properties");
-            propsFileName = "config.properties";
-        }else{
-            utils.log().info("fetching configLocal.properties");
-        }
 
         if(props.isEmpty()){
+            String propsFileName= "configLocal.properties";
+
+            if(!System.getenv().containsKey("DEV") ){
+                utils.log().info("fetching config.properties");
+                propsFileName = "config.properties";
+            }else{
+                utils.log().info("fetching configLocal.properties");
+            }
+
             try{
                 utils.log().info("loading config properties");
                 is = getClass().getClassLoader().getResourceAsStream(propsFileName);
@@ -35,6 +36,7 @@ public class PropertyManager {
                 }
             }
         }
+
         return props;
     }
 }
