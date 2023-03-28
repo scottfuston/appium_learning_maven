@@ -9,13 +9,11 @@ import java.util.Properties;
 public class CapabilitiesManager {
     TestUtils utils = new TestUtils();
     public MutableCapabilities getCaps() throws IOException {
-       // GlobalParams params = new GlobalParams();
-        GlobalParamsSauce params = new GlobalParamsSauce();
+        GlobalParams params = new GlobalParams();
         Properties props = new PropertyManager().getProps();
 
         try{
             utils.log().info("Setting Capabilities");
-           // DesiredCapabilities caps = new DesiredCapabilities();
             MutableCapabilities caps = new MutableCapabilities();
             caps.setCapability(MobileCapabilityType.PLATFORM_NAME,params.getPlatformName());
             caps.setCapability(MobileCapabilityType.UDID,params.getUDID());
@@ -57,9 +55,10 @@ public class CapabilitiesManager {
 //                    utils.log().info("appUrl is" + iOSAppUrl);
 //                    caps.setCapability("wdaLocalPort", params.getWdaLocalPort());
 //                    caps.setCapability("webkitDebugProxyPort", params.getWebkitDebugProxyPort());
-                    caps.setCapability("app", "storage:filename=serval-master-6.454.25529.ipa");
+               //     caps.setCapability("app", "storage:filename=serval-master-6.454.25529.ipa");
                     caps.setCapability("bundleId", "com.grandpad.ios");
                   //  caps.setCapability("app", "src/test/resources/apps/GrandPad.ipa");
+                    caps.setCapability("autoAcceptAlerts","true");
                     MutableCapabilities sauceOptions = new MutableCapabilities();
                     sauceOptions.setCapability("username",  System.getenv("SAUCE_USERNAME"));
                     sauceOptions.setCapability("accessKey", System.getenv("SAUCE_ACCESS_KEY"));

@@ -4,8 +4,11 @@ import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 import org.openqa.selenium.WebElement;
 
-public class LoginElements extends BasePage {
+import java.io.IOException;
 
+public class LoginElements extends BasePage {
+    public LoginElements() throws IOException {
+    }
     @AndroidFindBy(id = "net.grandpad.puma:id/tiEmailEditText")
     @iOSXCUITFindBy(iOSNsPredicate = "value == \"Email\"")
     public WebElement emailInput;
@@ -71,6 +74,7 @@ public class LoginElements extends BasePage {
     public WebElement emailErrorMessage;
 
     @AndroidFindBy(id = "net.grandpad.puma:id/clFeedGreeting")
+    @iOSXCUITFindBy(iOSClassChain = "**/XCUIElementTypeTable[`label == \"Hi James,\"`]")
     public WebElement feedGreeting;
 
     @AndroidFindBy(id = "net.grandpad.puma:id/ivFeedProfile")
@@ -82,10 +86,17 @@ public class LoginElements extends BasePage {
     @AndroidFindBy(id = "net.grandpad.puma:id/tvSettingsLogOut")
     public WebElement logoutBtn;
 
+    @AndroidFindBy(id = "net.grandpad.puma:id/parentPanel")
+    public WebElement logoutDialog;
     @AndroidFindBy(id = "net.grandpad.puma:id/etLogoutDialog")
-    public WebElement logOutDialogBtn;
+    public WebElement logOutDialogInput;
 
     @AndroidFindBy(id = "android:id/button1")
     public WebElement confirmLogoutBtn;
 
+    @AndroidFindBy(id="net.grandpad.puma:id/tvSettingsNotificationsHeader")
+    public WebElement notificationSetting;
+
+    @AndroidFindBy(id="android:id/content")
+    public WebElement notificationSettingsPage;
 }
