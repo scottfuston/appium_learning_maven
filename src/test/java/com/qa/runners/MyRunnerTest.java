@@ -29,6 +29,7 @@ import static io.cucumber.junit.CucumberOptions.SnippetType.CAMELCASE;
 )
 
 public class MyRunnerTest {
+
         @BeforeClass
         public static void initialize() throws Exception {
                 GlobalParams params = new GlobalParams();
@@ -43,6 +44,7 @@ public class MyRunnerTest {
         @AfterClass
         public static void quit() throws IOException {
                 DriverManager driverManager = new DriverManager();
+
                 if(driverManager.getDriver() != null){
                         driverManager.getDriver().quit();
                         driverManager.setDriver(null);
