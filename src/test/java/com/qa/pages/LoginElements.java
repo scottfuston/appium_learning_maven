@@ -10,7 +10,8 @@ public class LoginElements extends BasePage {
     public LoginElements() throws IOException {
     }
     @AndroidFindBy(id = "net.grandpad.puma:id/tiEmailEditText")
-    @iOSXCUITFindBy(iOSNsPredicate = "value == \"Email\"")
+    @iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"GrandPad\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[2]/XCUIElementTypeTextField")
+//    @iOSXCUITFindBy(iOSNsPredicate = "value == \"Email\"")
     public WebElement emailInput;
     @AndroidFindBy(id = "net.grandpad.puma:id/tvButtonText")
     @iOSXCUITFindBy(iOSNsPredicate = "label == \"Continue\" AND name == \"Continue\" AND value == \"Continue\"")
@@ -37,7 +38,7 @@ public class LoginElements extends BasePage {
     public WebElement dontAllowNotificationBtn;
 
     @AndroidFindBy(id ="net.grandpad.puma:id/navigation_bar_item_large_label_view")
-    @iOSXCUITFindBy(iOSNsPredicate = "name == \"tab_home\"")
+    @iOSXCUITFindBy(accessibility = "tab_home")
     public WebElement homeTabBtn;
 
     @iOSXCUITFindBy(iOSClassChain = "**/XCUIElementTypeStaticText[`label == \"Call Support (800) 704-9412\"`]")
@@ -74,24 +75,30 @@ public class LoginElements extends BasePage {
     public WebElement emailErrorMessage;
 
     @AndroidFindBy(id = "net.grandpad.puma:id/clFeedGreeting")
-    @iOSXCUITFindBy(iOSClassChain = "**/XCUIElementTypeTable[`label == \"Hi James,\"`]")
+    @iOSXCUITFindBy(iOSNsPredicate = "label == \"Hi James,\"")
     public WebElement feedGreeting;
 
     @AndroidFindBy(id = "net.grandpad.puma:id/ivFeedProfile")
+    @iOSXCUITFindBy(iOSClassChain = "**/XCUIElementTypeNavigationBar[`name == \"Serval.FeedTableView\"`]/XCUIElementTypeButton[4]")
     public WebElement profileBtn;
 
     @AndroidFindBy(accessibility = "Settings")
+    @iOSXCUITFindBy(iOSClassChain = "**/XCUIElementTypeNavigationBar[`name == \"Serval.ProfileTableView\"`]/XCUIElementTypeButton[3]")
     public WebElement settingsGear;
 
     @AndroidFindBy(id = "net.grandpad.puma:id/tvSettingsLogOut")
+    @iOSXCUITFindBy(accessibility = "Logout")
     public WebElement logoutBtn;
 
     @AndroidFindBy(id = "net.grandpad.puma:id/parentPanel")
+    @iOSXCUITFindBy(iOSClassChain = "**/XCUIElementTypeAlert[`label == \"Logout\"`]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeScrollView[1]")
     public WebElement logoutDialog;
     @AndroidFindBy(id = "net.grandpad.puma:id/etLogoutDialog")
+    @iOSXCUITFindBy(iOSNsPredicate = "type == \"XCUIElementTypeTextField\"")
     public WebElement logOutDialogInput;
 
     @AndroidFindBy(id = "android:id/button1")
+    @iOSXCUITFindBy(accessibility = "LOGOUT")
     public WebElement confirmLogoutBtn;
 
     @AndroidFindBy(id="net.grandpad.puma:id/tvSettingsNotificationsHeader")
