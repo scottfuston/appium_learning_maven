@@ -1,24 +1,32 @@
 package com.qa.tests;
 
+import com.google.common.collect.ImmutableMap;
 import com.qa.pages.BasePage;
 import com.qa.pages.LoginElements;
-import com.qa.utils.TestUtils;
-import io.appium.java_client.AppiumDriver;
+
+import com.qa.utils.GlobalParams;
 import io.appium.java_client.ios.IOSDriver;
 import org.junit.Assert;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.remote.RemoteWebElement;
 
 import java.io.IOException;
 import java.time.Duration;
 
 public class LoginTests extends BasePage {
     LoginElements loginEl = new LoginElements();
-    TestUtils utils = new TestUtils();
+    GlobalParams params = new GlobalParams();
+
     public LoginTests() throws IOException {
         super();
     }
 
-    public void enterUserName(String username) throws InterruptedException {
+    public void enterUserName(String username)
+    {
+        if(params.getPlatformName().equalsIgnoreCase("iOS"))
+        {
+            ((IOSDriver)driver).runAppInBackground((Duration.ofSeconds(3)));
+        }
+
         waitForVisibility(loginEl.emailInput);
         clear(loginEl.emailInput,"Clearing email input field");
         sendKeys(loginEl.emailInput,username,"Email user : " + username);
@@ -45,31 +53,40 @@ public class LoginTests extends BasePage {
 
     public void iamLoggedIn()
     {
-        waitForVisibility(loginEl.feedGreeting);
-        click(loginEl.feedGreeting);
+//        waitForVisibility(loginEl.feedGreeting);
+//        click(loginEl.feedGreeting);
+//        if(params.getPlatformName().equalsIgnoreCase("iOS")){
+//            click(loginEl.gameCenterIcon);
+//        }
         waitForVisibility(loginEl.homeTabBtn);
-        Assert.assertEquals("Home Button is displayed",true,loginEl.homeTabBtn.isDisplayed());
+        Assert.assertTrue("Home Button is displayed", loginEl.homeTabBtn.isDisplayed());
     }
 
     public void callNumberIsDisplayed() {
-        Assert.assertEquals("Call Support Number is displayed",true,loginEl.callNumberBtn.isDisplayed());
+        Assert.assertTrue("Call Support Number is displayed", loginEl.callNumberBtn.isDisplayed());
     }
 
     public void errorMessageIsDisplayed() {
         waitForVisibility(loginEl.emailErrorMessage);
-        Assert.assertEquals("Email error message is displayed",true,loginEl.emailErrorMessage.isDisplayed());
+        Assert.assertTrue("Email error message is displayed", loginEl.emailErrorMessage.isDisplayed());
 
     }
 
     public void gpLogoIsDisplayed() {
         waitForVisibility(loginEl.grandPadLogo);
-        Assert.assertEquals("Grandpad Log is displayed",true,loginEl.grandPadLogo.isDisplayed());
+        Assert.assertTrue("Grandpad Log is displayed", loginEl.grandPadLogo.isDisplayed());
     }
 
     public void clickOnProfileBtn()
     {
-        waitForVisibility(loginEl.profileBtn);
-        click(loginEl.profileBtn,"clicking profile user button");
+        if(params.getPlatformName().equalsIgnoreCase("IOS")){
+            clickProfileIcon(driver);
+        } else{
+            waitForVisibility(loginEl.profileBtn);
+            click(loginEl.profileBtn,"clicking profile user button");
+        }
+
+
     }
 
     public void clickOnGearIcon()
@@ -80,9 +97,14 @@ public class LoginTests extends BasePage {
 
     public void clickOnLogOutBtn()
     {
-            scrollGesture(driver,loginEl.notificationSettingsPage);
-            waitForVisibility(loginEl.logoutBtn);
-            click(loginEl.logoutBtn,"clicking logout button");
+        if(params.getPlatformName().equalsIgnoreCase("IOS"))
+        {
+            scrollGestureiOS(driver);
+        } else {
+            scrollGesture(driver, loginEl.notificationSettingsPage);
+        }
+        waitForVisibility(loginEl.logoutBtn);
+        click(loginEl.logoutBtn, "clicking logout button");
     }
 
     public void logout()
@@ -91,4 +113,5 @@ public class LoginTests extends BasePage {
         sendKeys(loginEl.logOutDialogInput,"logout","typing logout");
         click(loginEl.confirmLogoutBtn,"Confirming - Clicking logout Button");
     }
+
 }

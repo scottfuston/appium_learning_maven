@@ -17,6 +17,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.IOException;
 import java.time.Duration;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Properties;
 
 public class BasePage {
@@ -103,4 +105,16 @@ public class BasePage {
         utils.log().info("Swiping up");
         }
 
+    public static void scrollGestureiOS(AppiumDriver driver) {
+        Map<String, Object> params = new HashMap<>();
+        params.put("direction", "down");
+        driver.executeScript("mobile: scroll", params);
+    }
+
+        public void clickProfileIcon(AppiumDriver driver){
+            Map<String, Object> params = new HashMap<>();
+            params.put("x", 327);
+            params.put("y", 26);
+            driver.executeScript("mobile: tap", params);
+        }
     }
