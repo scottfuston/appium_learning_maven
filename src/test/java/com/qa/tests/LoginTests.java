@@ -2,18 +2,23 @@ package com.qa.tests;
 
 import com.qa.pages.BasePage;
 import com.qa.pages.LoginElements;
+import com.qa.utils.TestUtils;
+import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.ios.IOSDriver;
 import org.junit.Assert;
+import org.openqa.selenium.WebDriver;
 
 import java.io.IOException;
+import java.time.Duration;
 
 public class LoginTests extends BasePage {
     LoginElements loginEl = new LoginElements();
+    TestUtils utils = new TestUtils();
     public LoginTests() throws IOException {
         super();
     }
 
-    public void enterUserName(String username)
-    {
+    public void enterUserName(String username) throws InterruptedException {
         waitForVisibility(loginEl.emailInput);
         clear(loginEl.emailInput,"Clearing email input field");
         sendKeys(loginEl.emailInput,username,"Email user : " + username);

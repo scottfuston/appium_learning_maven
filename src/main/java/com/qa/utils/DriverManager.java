@@ -29,16 +29,21 @@ public class DriverManager {
         GlobalParams params = new GlobalParams();
         URL url = new URL(props.getProperty("appiumURL"));
 
+        utils.log().info("Setting appiumURL: " + url);
+
         if(driver == null){
             try{
-                utils.log().info("initializing Appium driver");
-
                 switch(params.getPlatformName()){
                     case "Android":
-                          driver = new AndroidDriver(url, new CapabilitiesManager().getCaps());
+                        utils.log().info("Initializing AndroidDriver");
+
+                        driver = new AndroidDriver(url, new CapabilitiesManager().getCaps());
                         break;
+
                     case "iOS":
-                          driver = new IOSDriver(new ServerManager().getServer().getUrl(), new CapabilitiesManager().getCaps());
+                        utils.log().info("Initializing IOSDriver");
+
+                        driver = new IOSDriver(url, new CapabilitiesManager().getCaps());
                         break;
                 }
 
@@ -47,8 +52,9 @@ public class DriverManager {
                 }
 
                 utils.log().info("Driver is initialized");
-
+                utils.log().info("Capabilities: ", driver.getCapabilities());
                 DriverManager.driver.set(driver);
+
             } catch (IOException e) {
                 utils.log().fatal("Driver initialization failure. ABORT !!!!" + e.toString());
 
@@ -56,7 +62,5 @@ public class DriverManager {
                 throw e;
             }
         }
-
     }
-
 }
