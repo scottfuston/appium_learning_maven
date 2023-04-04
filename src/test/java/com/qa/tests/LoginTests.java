@@ -3,6 +3,7 @@ package com.qa.tests;
 import com.google.common.collect.ImmutableMap;
 import com.qa.pages.BasePage;
 import com.qa.pages.LoginElements;
+
 import com.qa.utils.GlobalParams;
 import io.appium.java_client.ios.IOSDriver;
 import org.junit.Assert;
@@ -14,6 +15,7 @@ import java.time.Duration;
 public class LoginTests extends BasePage {
     LoginElements loginEl = new LoginElements();
     GlobalParams params = new GlobalParams();
+
     public LoginTests() throws IOException {
         super();
     }

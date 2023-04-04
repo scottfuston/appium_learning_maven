@@ -22,11 +22,13 @@ public class ServerManager {
 
         AppiumDriverLocalService server = getAppiumServerDefault();
         server.start();
+
         if(!server.isRunning()){
             utils.log().fatal("Appium server not started. ABORT!!!");
             throw new AppiumServerHasNotBeenStartedLocallyException("Appium server not started. ABORT!!!");
         }
-        server.clearOutPutStreams(); // -> Comment this if you want to see server logs in the console
+
+        //server.clearOutPutStreams(); // -> Comment this if you want to see server logs in the console
         ServerManager.server.set(server);
         utils.log().info("Appium server started");
     }

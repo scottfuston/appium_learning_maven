@@ -13,14 +13,18 @@ public class PropertyManager {
         InputStream is = null;
 
         if(props.isEmpty()){
-            String propsFileName= "configLocal.properties";
+            //SAUCE CONFIGS
+            //String propsFileName= "androidReal_sauce.properties";
+            //String propsFileName= "androidSim_sauce.properties";
+            String propsFileName= "configs/iosReal_sauce.properties";
+            //String propsFileName= "iosSim_sauce.properties";
 
-            if(!System.getenv().containsKey("DEV") ){
-                utils.log().info("fetching config.properties");
-                propsFileName = "config.properties";
-            }else{
-                utils.log().info("fetching configLocal.properties");
-            }
+            //LOCAL CONFIGS
+            //String propsFileName= "androidReal_local.properties";
+            //String propsFileName= "androidSim_local.properties";
+            //String propsFileName= "iosReal_local.properties";
+            //String propsFileName= "iosSim_local.properties";
+
 
             try{
                 utils.log().info("loading config properties");

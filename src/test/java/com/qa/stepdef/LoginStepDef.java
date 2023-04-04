@@ -14,7 +14,7 @@ public class LoginStepDef extends BasePage{
     }
 
     @When("I enter username as {string}")
-    public void iEnterUsernameAs(String username) throws IOException {
+    public void iEnterUsernameAs(String username) throws IOException, InterruptedException {
         test.enterUserName(username);
     }
 

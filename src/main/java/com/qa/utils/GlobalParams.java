@@ -81,20 +81,38 @@ public class GlobalParams {
     public void initializeGlobalParams() throws IOException {
         GlobalParams params = new GlobalParams();
         Properties props = new PropertyManager().getProps();
+        TestUtils utils = new TestUtils();
 
         params.setPlatformName(System.getProperty("platformName", props.getProperty("defaultPlatformName")));
-        params.setDeviceName(System.getProperty("deviceName"));
-        params.setUDID(System.getProperty("udid"));
+        utils.log().info("Setting platformName param: " + params.getPlatformName());
+
+        params.setDeviceName(System.getProperty("deviceName", props.getProperty("defaultDeviceName")));
+        utils.log().info("Setting deviceName param: " + params.getDeviceName());
+
+        params.setUDID(System.getProperty("udid", props.getProperty("defaultUDID")));
+        utils.log().info("Setting udid param: " + params.getUDID());
 
         switch(params.getPlatformName()){
             case "Android":
+                utils.log().info("Setting Android ports");
+
                 params.setSystemPort(System.getProperty("systemPort", "10000"));
+                utils.log().info("Setting systemPort param: " + params.getSystemPort());
+
                 params.setChromeDriverPort(System.getProperty("chromeDriverPort", "11000"));
+                utils.log().info("Setting chromeDriverPort param: " + params.getChromeDriverPort());
                 break;
+
             case "iOS":
+                utils.log().info("Setting IOS ports");
+
                 params.setWdaLocalPort(System.getProperty("wdaLocalPort", "10001"));
+                utils.log().info("Setting wdaLocalPort param: " + params.getWebkitDebugProxyPort());
+
                 params.setWebkitDebugProxyPort(System.getProperty("webkitDebugProxyPort", "11001"));
+                utils.log().info("Setting webkitDebugProxyPort param: " + params.getWebkitDebugProxyPort());
                 break;
+
             default:
                 throw new IllegalStateException("Invalid Platform Name!");
         }
