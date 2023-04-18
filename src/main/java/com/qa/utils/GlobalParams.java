@@ -12,7 +12,15 @@ public class GlobalParams {
     private static ThreadLocal<String> chromeDriverPort = new ThreadLocal<String>();
     private static ThreadLocal<String> wdaLocalPort = new ThreadLocal<String>();
     private static ThreadLocal<String> webkitDebugProxyPort = new ThreadLocal<String>();
-    private static ThreadLocal<String> autoAcceptAlerts = new ThreadLocal<>();
+    private static ThreadLocal<String> avd = new ThreadLocal<String>();
+
+    public void setAvd(String avd1){
+        avd.set(avd1);
+    }
+
+    public String getAvd(){
+        return avd.get();
+    }
 
     public void setPlatformName(String platformName1){
         platformName.set(platformName1);
@@ -20,14 +28,6 @@ public class GlobalParams {
 
     public String getPlatformName(){
         return platformName.get();
-    }
-    public void setAutoAcceptAlerts(String autoAcceptAlerts1){
-        autoAcceptAlerts.set(autoAcceptAlerts1);
-    }
-
-
-    public String getAutoAcceptAlerts(){
-        return autoAcceptAlerts.get();
     }
 
     public String getUDID() {
@@ -79,18 +79,21 @@ public class GlobalParams {
     }
 
     public void initializeGlobalParams() throws IOException {
+        //TESTNG
+        //testng cannot use the System properties as we did below. (junit only)
+
         GlobalParams params = new GlobalParams();
         Properties props = new PropertyManager().getProps();
         TestUtils utils = new TestUtils();
 
-        params.setPlatformName(System.getProperty("platformName", props.getProperty("defaultPlatformName")));
-        utils.log().info("Setting platformName param: " + params.getPlatformName());
+        //params.setPlatformName(System.getProperty("platformName", props.getProperty("defaultPlatformName")));
+        //utils.log().info("Setting platformName param: " + params.getPlatformName());
 
-        params.setDeviceName(System.getProperty("deviceName", props.getProperty("defaultDeviceName")));
-        utils.log().info("Setting deviceName param: " + params.getDeviceName());
+        //params.setDeviceName(System.getProperty("deviceName", props.getProperty("defaultDeviceName")));
+        //utils.log().info("Setting deviceName param: " + params.getDeviceName());
 
-        params.setUDID(System.getProperty("udid", props.getProperty("defaultUDID")));
-        utils.log().info("Setting udid param: " + params.getUDID());
+        //params.setUDID(System.getProperty("udid", props.getProperty("defaultUDID")));
+        //utils.log().info("Setting udid param: " + params.getUDID());
 
         switch(params.getPlatformName()){
             case "Android":

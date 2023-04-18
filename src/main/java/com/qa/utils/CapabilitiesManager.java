@@ -3,7 +3,6 @@ package com.qa.utils;
 import org.openqa.selenium.MutableCapabilities;
 
 import java.io.IOException;
-import java.util.Objects;
 import java.util.Properties;
 
 public class CapabilitiesManager {
@@ -22,6 +21,7 @@ public class CapabilitiesManager {
             caps.setCapability("deviceName", params.getDeviceName());
             caps.setCapability("automationName", props.getProperty("automationName"));
             //caps.setCapability("udid", params.getUDID());
+
             //install app
             caps.setCapability("appium:app", props.getProperty("appLocation"));
 
@@ -29,10 +29,14 @@ public class CapabilitiesManager {
                 case "Android" -> {
 
                     //Emulator
-                    if(!Objects.equals(props.getProperty("deviceType"), "real")){
-                        caps.setCapability("avd", props.getProperty("emulator"));
-                        caps.setCapability("avdLaunchTimeout", 180000);
-                    }
+                    //if(!Objects.equals(props.getProperty("deviceType"), "real")){
+                    //    caps.setCapability("avdLaunchTimeout", 180000);
+                    //    caps.setCapability("avd", params.getAvd());
+                    //}
+
+
+                    //caps.setCapability("avdLaunchTimeout", 180000);
+                    //caps.setCapability("avd", "Pixel_6");
 
                     caps.setCapability("systemPort", params.getSystemPort());
                     caps.setCapability("chromeDriverPort", params.getChromeDriverPort());

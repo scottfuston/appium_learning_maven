@@ -1,6 +1,6 @@
 package com.qa.runners;
+//THIS FILE IS FOR JUNIT RUNNER/NOT FOR TESTNG
 
-import com.qa.pages.BasePage;
 import com.qa.utils.DriverManager;
 import com.qa.utils.GlobalParams;
 import com.qa.utils.ServerManager;
@@ -36,8 +36,7 @@ public class MyRunnerTest {
 
                 params.initializeGlobalParams();
 
-                ThreadContext.put("ROUTINGKEY",params.getPlatformName() + "_"
-                + params.getDeviceName());
+                ThreadContext.put("ROUTINGKEY", params.getPlatformName() + "_" + params.getDeviceName());
 
                 new ServerManager().startServer();
                 new DriverManager().initializeDriver();

@@ -1,0 +1,53 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite" verbose="2" annotations="JDK" parallel="tests">
+<!--    ANDROID EMULATOR-->
+    <test name="Pixel6-test" preserve-order="true" >
+        <parameter  name="platformName" value="Android"/>
+        <parameter  name="udid" value="emulator-5554"/>
+        <parameter  name="deviceName" value="Pixel 6"/>
+        <parameter  name="systemPort" value="10000"/>
+        <parameter  name="chromeDriverPort" value="11000"/>
+        <!-- <parameter  name="avd" value="Pixel_6"/>-->
+        <classes>
+            <class name="com.qa.runners.MyTestngRunnerTest"></class>
+        </classes>
+    </test>
+
+<!--    ANDROID EMULATOR-->
+<!--    <test name="Pixel5-test" preserve-order="true" >-->
+<!--        <parameter  name="platformName" value="Android"/>-->
+<!--        <parameter  name="udid" value="emulator-5554"/>-->
+<!--        <parameter  name="deviceName" value="Pixel 5"/>-->
+<!--        <parameter  name="systemPort" value="10001"/>-->
+<!--        <parameter  name="chromeDriverPort" value="11001"/>-->
+<!--        <parameter  name="avd" value="Pixel_5"/>-->
+<!--        <classes>-->
+<!--            <class name="com.qa.runners.MyTestngRunnerTest"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    IOS SIMULATOR-->
+<!--    <test name="iPhone_13" preserve-order="true" >-->
+<!--        <parameter  name="platformName" value="iOS"/>-->
+<!--        <parameter  name="udid" value="A6B4A94B-FBD5-4963-A869-B1DBEE4BC4C9"/>-->
+<!--        <parameter  name="deviceName" value="iPhone 13"/>-->
+<!--        <parameter  name="wdaLocalPort" value="10002"/>-->
+<!--        <parameter  name="webkitDebugProxyPort" value="11002"/>-->
+<!--        <classes>-->
+<!--            <class name="com.qa.runners.MyTestngRunnerTest"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    ANDROID REAL LOCAL;-->
+<!--    <test name="Scott's Phone" preserve-order="true" >-->
+<!--        <parameter  name="platformName" value="Android"/>-->
+<!--        <parameter  name="udid" value="FLCH100018202285"/>-->
+<!--        <parameter  name="deviceName" value="Scott's Phone"/>-->
+<!--        <parameter  name="systemPort" value="10000"/>-->
+<!--        <parameter  name="chromeDriverPort" value="11000"/>-->
+<!--        &lt;!&ndash;        <parameter  name="avd" value="Pixel_6"/>&ndash;&gt;-->
+<!--        <classes>-->
+<!--            <class name="com.qa.runners.MyTestngRunnerTest"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+</suite>

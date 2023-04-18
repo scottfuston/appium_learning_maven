@@ -1,4 +1,4 @@
-
+@test
 Feature: Login scenarios
 
   Scenario: Grandpad Logo and Call support is displayed

@@ -14,16 +14,16 @@ public class PropertyManager {
 
         if(props.isEmpty()){
             //SAUCE CONFIGS
-            //String propsFileName= "androidReal_sauce.properties";
-            //String propsFileName= "androidSim_sauce.properties";
-            String propsFileName= "configs/iosReal_sauce.properties";
-            //String propsFileName= "iosSim_sauce.properties";
+            //String propsFileName= "configs/androidReal_sauce.properties";
+            //String propsFileName= "configs/androidSim_sauce.properties";
+            //String propsFileName= "configs/iosReal_sauce.properties";
+            //String propsFileName= "configs/iosSim_sauce.properties";
 
             //LOCAL CONFIGS
-            //String propsFileName= "androidReal_local.properties";
-            //String propsFileName= "androidSim_local.properties";
-            //String propsFileName= "iosReal_local.properties";
-            //String propsFileName= "iosSim_local.properties";
+            String propsFileName= "configs/androidReal_local.properties";
+            //String propsFileName= "configs/androidVirtual_local.properties";
+            //String propsFileName= "configs/iosReal_local.properties";
+            //String propsFileName= "configs/iosSim_local.properties";
 
 
             try{

@@ -1,14 +1,10 @@
 package com.qa.tests;
 
-import com.google.common.collect.ImmutableMap;
 import com.qa.pages.BasePage;
 import com.qa.pages.LoginElements;
-
 import com.qa.utils.GlobalParams;
 import io.appium.java_client.ios.IOSDriver;
 import org.junit.Assert;
-import org.openqa.selenium.remote.RemoteWebElement;
-
 import java.io.IOException;
 import java.time.Duration;
 
@@ -33,12 +29,14 @@ public class LoginTests extends BasePage {
         click(loginEl.continueBtn,"Clicking Continue Button");
 
     }
+
     public void enterPassword(String password)
     {
         waitForVisibility(loginEl.typeMyPassBtn);
         click(loginEl.typeMyPassBtn,"Clicking Type my Password Button");
         sendKeys(loginEl.passInputField,password,"Typing password " + password);
     }
+
     public void login()
     {
         waitForVisibility(loginEl.logInSubmitBtn);
@@ -85,8 +83,6 @@ public class LoginTests extends BasePage {
             waitForVisibility(loginEl.profileBtn);
             click(loginEl.profileBtn,"clicking profile user button");
         }
-
-
     }
 
     public void clickOnGearIcon()
@@ -113,5 +109,4 @@ public class LoginTests extends BasePage {
         sendKeys(loginEl.logOutDialogInput,"logout","typing logout");
         click(loginEl.confirmLogoutBtn,"Confirming - Clicking logout Button");
     }
-
 }
