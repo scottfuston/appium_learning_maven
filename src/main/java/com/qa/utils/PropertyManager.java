@@ -20,8 +20,8 @@ public class PropertyManager {
             //String propsFileName= "configs/iosSim_sauce.properties";
 
             //LOCAL CONFIGS
-            String propsFileName= "configs/androidReal_local.properties";
-            //String propsFileName= "configs/androidVirtual_local.properties";
+            //String propsFileName= "configs/androidReal_local.properties";
+            String propsFileName= "configs/androidVirtual_local.properties";
             //String propsFileName= "configs/iosReal_local.properties";
             //String propsFileName= "configs/iosSim_local.properties";
 

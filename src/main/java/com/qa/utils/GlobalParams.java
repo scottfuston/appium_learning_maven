@@ -13,6 +13,33 @@ public class GlobalParams {
     private static ThreadLocal<String> wdaLocalPort = new ThreadLocal<String>();
     private static ThreadLocal<String> webkitDebugProxyPort = new ThreadLocal<String>();
     private static ThreadLocal<String> avd = new ThreadLocal<String>();
+    private static  ThreadLocal<String> automationName = new ThreadLocal<String>();
+    private static  ThreadLocal<String> appLocation = new ThreadLocal<String>();
+    private static  ThreadLocal<String> platformVersion = new ThreadLocal<String>();
+
+    public void setPlatformVersion(String platformVersion1){
+        platformVersion.set(platformVersion1);
+    }
+
+    public String getPlatformVersion(){
+        return platformVersion.get();
+    }
+
+    public void setAppLocation(String appLocation1){
+        appLocation.set(appLocation1);
+    }
+
+    public String getAppLocation(){
+        return appLocation.get();
+    }
+
+    public void setAutomationName(String automationName1){
+        automationName.set(automationName1);
+    }
+
+    public String getAutomationName(){
+        return automationName.get();
+    }
 
     public void setAvd(String avd1){
         avd.set(avd1);

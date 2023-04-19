@@ -5,7 +5,7 @@
             <PatternLayout pattern="[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} %c:%L - %m%n"/>
         </Console>
         <Routing name="MyRoutingAppender">
-            <Routes pattern="${ctx:ROUTINGKEY}">
+            <Routes pattern="$${ctx:ROUTINGKEY}">
                 <Route>
                     <RollingFile
                             name="appender-${ctx:ROUTINGKEY}"

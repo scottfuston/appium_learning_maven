@@ -1,32 +1,41 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="Suite" verbose="2" annotations="JDK" parallel="tests">
-<!--    ANDROID EMULATOR-->
-    <test name="Pixel6-test" preserve-order="true" >
+<suite name="Suite"  parallel="tests">
+<!--    This parameter will be passed to every test in this suite-->
+<!--        <parameter name="" value="" />-->
+
+<!--    ANDROID EMULATOR LOCAL-->
+    <test name="Pixel6-test" >
         <parameter  name="platformName" value="Android"/>
         <parameter  name="udid" value="emulator-5554"/>
         <parameter  name="deviceName" value="Pixel 6"/>
         <parameter  name="systemPort" value="10000"/>
         <parameter  name="chromeDriverPort" value="11000"/>
-        <!-- <parameter  name="avd" value="Pixel_6"/>-->
+         <parameter  name="avd" value="Pixel_6"/>
+
+        <parameter name="automationName" value="UiAutomator2" />
+        <parameter name="appLocation" value="src/test/resources/apps/PUMA-HEAD-47926-v8a.apk" />
         <classes>
-            <class name="com.qa.runners.MyTestngRunnerTest"></class>
+            <class name="com.qa.runners.MyTestngRunnerTest" />
         </classes>
     </test>
 
-<!--    ANDROID EMULATOR-->
-<!--    <test name="Pixel5-test" preserve-order="true" >-->
-<!--        <parameter  name="platformName" value="Android"/>-->
-<!--        <parameter  name="udid" value="emulator-5554"/>-->
-<!--        <parameter  name="deviceName" value="Pixel 5"/>-->
-<!--        <parameter  name="systemPort" value="10001"/>-->
-<!--        <parameter  name="chromeDriverPort" value="11001"/>-->
-<!--        <parameter  name="avd" value="Pixel_5"/>-->
-<!--        <classes>-->
-<!--            <class name="com.qa.runners.MyTestngRunnerTest"></class>-->
-<!--        </classes>-->
-<!--    </test>-->
+<!--    ANDROID EMULATOR LOCAL -->
+    <test name="Pixel5-test">
+        <parameter  name="platformName" value="Android"/>
+        <parameter  name="udid" value="emulator-5556"/>
+        <parameter  name="deviceName" value="Pixel 5"/>
+        <parameter  name="systemPort" value="10001"/>
+        <parameter  name="chromeDriverPort" value="11001"/>
+        <parameter  name="avd" value="Pixel_5"/>
 
-<!--    IOS SIMULATOR-->
+        <parameter name="automationName" value="UiAutomator2" />
+        <parameter name="appLocation" value="src/test/resources/apps/PUMA-HEAD-47926-v8a.apk" />
+        <classes>
+            <class name="com.qa.runners.MyTestngRunnerTest" />
+        </classes>
+    </test>
+
+<!--    IOS SIMULATOR LOCAL-->
 <!--    <test name="iPhone_13" preserve-order="true" >-->
 <!--        <parameter  name="platformName" value="iOS"/>-->
 <!--        <parameter  name="udid" value="A6B4A94B-FBD5-4963-A869-B1DBEE4BC4C9"/>-->
@@ -38,16 +47,61 @@
 <!--        </classes>-->
 <!--    </test>-->
 
+<!--    IOS REAL LOCAL-->
+<!--    <test name="iPhone_13" preserve-order="true" >-->
+<!--        <parameter  name="platformName" value="iOS"/>-->
+<!--        <parameter  name="udid" value="00008030-001D65D13ED0C02E)"/>-->
+<!--        <parameter  name="deviceName" value="Scott's iPhone"/>-->
+<!--        <parameter  name="wdaLocalPort" value="10003"/>-->
+<!--        <parameter  name="webkitDebugProxyPort" value="11003"/>-->
+<!--        <classes>-->
+<!--            <class name="com.qa.runners.MyTestngRunnerTest"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
 <!--    ANDROID REAL LOCAL;-->
+<!--    <parameter name="automationName" value="UiAutomator2" />-->
+<!--    <parameter name="appLocation" value="src/test/resources/apps/PUMA-HEAD-47926-v8a.apk" />-->
+
 <!--    <test name="Scott's Phone" preserve-order="true" >-->
 <!--        <parameter  name="platformName" value="Android"/>-->
 <!--        <parameter  name="udid" value="FLCH100018202285"/>-->
 <!--        <parameter  name="deviceName" value="Scott's Phone"/>-->
-<!--        <parameter  name="systemPort" value="10000"/>-->
-<!--        <parameter  name="chromeDriverPort" value="11000"/>-->
-<!--        &lt;!&ndash;        <parameter  name="avd" value="Pixel_6"/>&ndash;&gt;-->
+<!--        <parameter  name="systemPort" value="10004"/>-->
+<!--        <parameter  name="chromeDriverPort" value="11004"/>-->
+<!--        <parameter  name="avd" value="Pixel_6"/>-->
 <!--        <classes>-->
 <!--            <class name="com.qa.runners.MyTestngRunnerTest"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    &lt;!&ndash;    ANDROID REAL SAUCE LABS&ndash;&gt;-->
+<!--    <test name="Pixel6a-test" preserve-order="true" >-->
+<!--        <parameter  name="platformName" value="Android"/>-->
+<!--        <parameter  name="udid" value="Google_Pixel_6a_13_real_us"/>-->
+<!--        <parameter  name="deviceName" value="Google Pixel 6a"/>-->
+<!--        <parameter  name="systemPort" value="10003"/>-->
+<!--        <parameter  name="chromeDriverPort" value="11003"/>-->
+
+<!--        <parameter name="automationName" value="UiAutomator2" />-->
+<!--        <parameter name="appLocation" value="storage:filename=PUMA-HEAD-47777-v8a.apk" />-->
+<!--        <classes>-->
+<!--            <class name="com.qa.runners.MyTestngRunnerTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    &lt;!&ndash;    ANDROID REAL SAUCE LABS&ndash;&gt;-->
+<!--    <test name="Pixel5-test" preserve-order="true" >-->
+<!--        <parameter  name="platformName" value="Android"/>-->
+<!--        <parameter  name="udid" value="Google_Pixel_5_13_real_us"/>-->
+<!--        <parameter  name="deviceName" value="Google Pixel 5"/>-->
+<!--        <parameter  name="systemPort" value="10004"/>-->
+<!--        <parameter  name="chromeDriverPort" value="11004"/>-->
+
+<!--        <parameter name="automationName" value="UiAutomator2" />-->
+<!--        <parameter name="appLocation" value="storage:filename=PUMA-HEAD-47777-v8a.apk" />-->
+<!--        <classes>-->
+<!--            <class name="com.qa.runners.MyTestngRunnerTest"/>-->
 <!--        </classes>-->
 <!--    </test>-->
 </suite>

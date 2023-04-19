@@ -17,13 +17,13 @@ public class CapabilitiesManager {
 
             MutableCapabilities caps = new MutableCapabilities();
             caps.setCapability("platformName", params.getPlatformName());
-            caps.setCapability("platformVersion", props.getProperty("platformVersion"));
+            caps.setCapability("platformVersion", params.getPlatformVersion());
             caps.setCapability("deviceName", params.getDeviceName());
-            caps.setCapability("automationName", props.getProperty("automationName"));
-            //caps.setCapability("udid", params.getUDID());
+            caps.setCapability("automationName", params.getAutomationName());
+            caps.setCapability("udid", params.getUDID());
 
             //install app
-            caps.setCapability("appium:app", props.getProperty("appLocation"));
+            caps.setCapability("appium:app", params.getAppLocation());
 
             switch (params.getPlatformName()) {
                 case "Android" -> {
@@ -35,8 +35,8 @@ public class CapabilitiesManager {
                     //}
 
 
-                    //caps.setCapability("avdLaunchTimeout", 180000);
-                    //caps.setCapability("avd", "Pixel_6");
+                    caps.setCapability("avdLaunchTimeout", 180000);
+                    caps.setCapability("avd", params.getAvd());
 
                     caps.setCapability("systemPort", params.getSystemPort());
                     caps.setCapability("chromeDriverPort", params.getChromeDriverPort());

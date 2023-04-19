@@ -3,7 +3,6 @@ package com.qa.utils;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
 import io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException;
 import io.appium.java_client.service.local.AppiumServiceBuilder;
-import io.appium.java_client.service.local.flags.GeneralServerFlag;
 
 import java.io.File;
 
@@ -15,13 +14,15 @@ public class ServerManager {
         return server.get();
     }
 
-    public void startServer(){
+    public void startServer() throws InterruptedException {
         utils.log().info("starting appium server");
         //for more control 👇
-        //AppiumDriverLocalService server = MacGetAppiumService();
+        AppiumDriverLocalService server = MacGetAppiumService();
 
-        AppiumDriverLocalService server = getAppiumServerDefault();
+        //AppiumDriverLocalService server = getAppiumServerDefault();
+
         server.start();
+        utils.log().info("server URL" + server.getUrl());
 
         if(!server.isRunning()){
             utils.log().fatal("Appium server not started. ABORT!!!");
@@ -39,11 +40,9 @@ public class ServerManager {
 
     public AppiumDriverLocalService MacGetAppiumService() {
         GlobalParams params = new GlobalParams();
+
         return AppiumDriverLocalService.buildService(new AppiumServiceBuilder()
-                .usingDriverExecutable(new File("/usr/local/bin/node"))
-                .withAppiumJS(new File("/usr/local/lib/node_modules/appium/build/lib/main.js"))
                 .usingAnyFreePort()
-                .withArgument(GeneralServerFlag.SESSION_OVERRIDE)
                 .withLogFile(new File(params.getPlatformName() + "_"
                         + params.getDeviceName() + File.separator + "Server.log")));
     }

@@ -3,6 +3,7 @@ package com.qa.runners;
 import com.qa.utils.DriverManager;
 import com.qa.utils.GlobalParams;
 import com.qa.utils.ServerManager;
+import com.qa.utils.TestUtils;
 import io.cucumber.testng.CucumberOptions;
 import io.cucumber.testng.FeatureWrapper;
 import io.cucumber.testng.PickleWrapper;
@@ -28,22 +29,35 @@ import java.io.IOException;
         monochrome=true
 )
 public class MyTestngRunnerTest {
-
     private TestNGCucumberRunner testNGCucumberRunner;
 
-    @Parameters({"platformName", "udid", "deviceName", "systemPort", "chromeDriverPort", "wdaLocalPort", "webkitDebugProxyPort"})
+    @Parameters({
+            "platformName",
+            "udid",
+            "deviceName",
+            "systemPort",
+            "chromeDriverPort",
+            "wdaLocalPort",
+            "webkitDebugProxyPort",
+            "avd",
+            "automationName",
+            "appLocation"})
 
     @BeforeClass(alwaysRun = true)
     public void setUpClass(
             String platformName,
             String udid,
             String deviceName,
-            @Optional("Android") String systemPort,
-            @Optional("Android") String chromeDriverPort,
-            @Optional("iOS") String wdaLocalPort,
-            @Optional("iOS") String webkitDebugProxyPort
+            @Optional() String systemPort,
+            @Optional() String chromeDriverPort,
+            @Optional() String wdaLocalPort,
+            @Optional() String webkitDebugProxyPort,
+            @Optional() String avd,
+            String automationName,
+            String appLocation
     ) throws Exception {
-
+        TestUtils utils = new TestUtils();
+        utils.log().info("setUpClass running.");
         //log4j logging
         ThreadContext.put("ROUTINGKEY", platformName + "_" + deviceName);
 
@@ -51,11 +65,14 @@ public class MyTestngRunnerTest {
         params.setPlatformName(platformName);
         params.setUDID(udid);
         params.setDeviceName(deviceName);
+        params.setAutomationName(automationName);
+        params.setAppLocation(appLocation);
 
         switch (platformName){
             case "Android" :
                 params.setSystemPort(systemPort);
                 params.setChromeDriverPort(chromeDriverPort);
+                params.setAvd(avd);
                 break;
             case "iOS" :
                 params.setWdaLocalPort(wdaLocalPort);
