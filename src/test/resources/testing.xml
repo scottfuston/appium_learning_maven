@@ -20,35 +20,35 @@
     <!--    </test>-->
 
     <!--    ANDROID EMULATOR LOCAL -->
-        <test name="Pixel5-test">
-            <parameter  name="platformName" value="Android"/>
-            <parameter  name="udid" value="emulator-5556"/>
-            <parameter  name="deviceName" value="Pixel 5"/>
-            <parameter  name="systemPort" value="10001"/>
-            <parameter  name="chromeDriverPort" value="11001"/>
-            <parameter  name="avd" value="Pixel_5"/>
+<!--        <test name="Pixel5-test">-->
+<!--            <parameter  name="platformName" value="Android"/>-->
+<!--            <parameter  name="udid" value="emulator-5556"/>-->
+<!--            <parameter  name="deviceName" value="Pixel 5"/>-->
+<!--            <parameter  name="systemPort" value="10001"/>-->
+<!--            <parameter  name="chromeDriverPort" value="11001"/>-->
+<!--            <parameter  name="avd" value="Pixel_5"/>-->
 
-            <parameter name="automationName" value="UiAutomator2" />
-            <parameter name="appLocation" value="src/test/resources/apps/PUMA-HEAD-47926-v8a.apk" />
-            <classes>
-                <class name="com.qa.runners.MyTestngRunnerTest" />
-            </classes>
-        </test>
-
-    <!--      IOS SIMULATOR LOCAL- -->
-<!--        <test name="iPhone_13" preserve-order="true" >-->
-<!--            <parameter  name="platformName" value="iOS"/>-->
-<!--            <parameter  name="udid" value="A6B4A94B-FBD5-4963-A869-B1DBEE4BC4C9"/>-->
-<!--            <parameter  name="deviceName" value="iPhone 13"/>-->
-<!--            <parameter  name="wdaLocalPort" value="10002"/>-->
-<!--            <parameter  name="webkitDebugProxyPort" value="11002"/>-->
-
-<!--            <parameter name="automationName" value="XCUITest" />-->
-<!--             <parameter name="appLocation" value="src/test/resources/apps/GrandPad.app.zip" />-->
+<!--            <parameter name="automationName" value="UiAutomator2" />-->
+<!--            <parameter name="appLocation" value="src/test/resources/apps/PUMA-HEAD-47926-v8a.apk" />-->
 <!--            <classes>-->
 <!--                <class name="com.qa.runners.MyTestngRunnerTest" />-->
 <!--            </classes>-->
 <!--        </test>-->
+
+    <!--      IOS SIMULATOR LOCAL- -->
+        <test name="iPhone_13" preserve-order="true" >
+            <parameter  name="platformName" value="iOS"/>
+            <parameter  name="udid" value="A6B4A94B-FBD5-4963-A869-B1DBEE4BC4C9"/>
+            <parameter  name="deviceName" value="iPhone 13"/>
+            <parameter  name="wdaLocalPort" value="10002"/>
+            <parameter  name="webkitDebugProxyPort" value="11002"/>
+
+            <parameter name="automationName" value="XCUITest" />
+             <parameter name="appLocation" value="src/test/resources/apps/GrandPad.app.zip" />
+            <classes>
+                <class name="com.qa.runners.MyTestngRunnerTest" />
+            </classes>
+        </test>
 
 <!--            IOS SIMULATOR SAUCE-->
 <!--            <test name="iPhone 13 Simulator" >-->

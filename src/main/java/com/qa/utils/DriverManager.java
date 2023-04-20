@@ -28,8 +28,12 @@ public class DriverManager {
         AppiumDriver driver = null;
         GlobalParams params = new GlobalParams();
 
-        URL url = new ServerManager().getServer().getUrl();
-        //URL url = new URL("https://@ondemand.us-west-1.saucelabs.com:443/wd/hub");
+        URL url = new URL("https://@ondemand.us-west-1.saucelabs.com:443/wd/hub");
+
+        if(params.getAppLocation().startsWith("src")){
+            utils.log().info("local url");
+            url = new ServerManager().getServer().getUrl();
+        }
 
         if(driver == null){
             try{
