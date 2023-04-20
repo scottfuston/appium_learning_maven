@@ -41,12 +41,13 @@ public class MyTestngRunnerTest {
             "webkitDebugProxyPort",
             "avd",
             "automationName",
-            "appLocation"})
+            "appLocation",
+            "platformVersion"})
 
     @BeforeClass(alwaysRun = true)
     public void setUpClass(
             String platformName,
-            String udid,
+            @Optional() String udid,
             String deviceName,
             @Optional() String systemPort,
             @Optional() String chromeDriverPort,
@@ -54,7 +55,8 @@ public class MyTestngRunnerTest {
             @Optional() String webkitDebugProxyPort,
             @Optional() String avd,
             String automationName,
-            String appLocation
+            String appLocation,
+            @Optional() String platformVersion
     ) throws Exception {
         TestUtils utils = new TestUtils();
         utils.log().info("setUpClass running.");
@@ -67,6 +69,7 @@ public class MyTestngRunnerTest {
         params.setDeviceName(deviceName);
         params.setAutomationName(automationName);
         params.setAppLocation(appLocation);
+        params.setPlatformVersion(platformVersion);
 
         switch (platformName){
             case "Android" :

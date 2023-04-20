@@ -27,7 +27,7 @@ public class DriverManager {
     public void initializeDriver() throws Exception {
         AppiumDriver driver = null;
         GlobalParams params = new GlobalParams();
-        //URL url = new URL("http://0.0.0.0:4723");
+
         URL url = new ServerManager().getServer().getUrl();
         //URL url = new URL("https://@ondemand.us-west-1.saucelabs.com:443/wd/hub");
 
