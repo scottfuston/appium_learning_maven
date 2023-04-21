@@ -23,7 +23,7 @@ import java.io.IOException;
                 , "html:target/cucumber/"
                 , "summary"
         },
-        features = {"src/test/resources"},
+        features = {"src/test/java/com/qa/features"},
         glue = {"com.qa.stepdef"},
         dryRun=false,
         monochrome=true
@@ -71,16 +71,16 @@ public class MyTestngRunnerTest {
         params.setAppLocation(appLocation);
         params.setPlatformVersion(platformVersion);
 
-        switch (platformName){
-            case "Android" :
+        switch (platformName) {
+            case "Android" -> {
                 params.setSystemPort(systemPort);
                 params.setChromeDriverPort(chromeDriverPort);
                 params.setAvd(avd);
-                break;
-            case "iOS" :
+            }
+            case "iOS" -> {
                 params.setWdaLocalPort(wdaLocalPort);
                 params.setWebkitDebugProxyPort(webkitDebugProxyPort);
-                break;
+            }
         }
 
         new ServerManager().startServer();
