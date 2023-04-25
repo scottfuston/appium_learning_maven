@@ -2,9 +2,9 @@
 ## PROJECT
 ##############################
 *.log
-/Android*/
-/iOS*/
-testng.xml
+Android*/
+iOS*/
+src/test/resources/testng.xml
 ##############################
 ## IntelliJ
 ##############################

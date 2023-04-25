@@ -1,7 +1,6 @@
 package com.qa.utils;
 
 import org.openqa.selenium.MutableCapabilities;
-
 import java.io.IOException;
 import java.util.Properties;
 
@@ -19,15 +18,18 @@ public class CapabilitiesManager {
             caps.setCapability("platformName", params.getPlatformName());
             caps.setCapability("deviceName", params.getDeviceName());
             caps.setCapability("automationName", params.getAutomationName());
+            caps.setCapability("appium:app", params.getAppLocation());
+
+            if(params.getUDID() != null){
+                utils.log().info("Setting 'udid' capability");
+                caps.setCapability("udid", params.getUDID());
+            }
 
             if(params.getPlatformVersion() != null){
                 utils.log().info("Setting 'platformVersion' capability");
 
                 caps.setCapability("platformVersion", params.getPlatformVersion());
             }
-
-            //install app
-            caps.setCapability("appium:app", params.getAppLocation());
 
             //SAUCELABS CAPABILITIES
             if(new ServerManager().getServer().getUrl().toString().endsWith("/hub")) {
@@ -48,7 +50,6 @@ public class CapabilitiesManager {
                     caps.setCapability("systemPort", params.getSystemPort());
                     caps.setCapability("chromeDriverPort", params.getChromeDriverPort());
                     caps.setCapability("autoGrantPermissions", "true");
-                    caps.setCapability("udid", params.getUDID());
 
                     if(params.getAvd() != null){
                         // EMULATOR
@@ -69,7 +70,6 @@ public class CapabilitiesManager {
                     caps.setCapability("wdaLocalPort", params.getWdaLocalPort());
                     caps.setCapability("webkitDebugProxyPort", params.getWebkitDebugProxyPort());
                     caps.setCapability("autoAcceptAlerts",true);
-                    caps.setCapability("udid", System.getProperty("UDID"));
 
                     // SIMULATOR
                     if(params.getAppLocation().endsWith(".app.zip")){
