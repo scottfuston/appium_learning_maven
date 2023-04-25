@@ -59,7 +59,7 @@ public class MyTestngRunnerTest {
             @Optional() String platformVersion
     ) throws Exception {
         TestUtils utils = new TestUtils();
-        utils.log().info("setUpClass running.");
+
         //log4j logging
         ThreadContext.put("ROUTINGKEY", platformName + "_" + deviceName);
 
