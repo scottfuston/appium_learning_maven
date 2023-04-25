@@ -84,7 +84,6 @@
     <!--    ANDROID REAL SAUCE LABS-->
     <!--    <test name="Pixel6a-test" preserve-order="true" >-->
     <!--        <parameter  name="platformName" value="Android"/>-->
-    <!--        <parameter  name="udid" value="Google_Pixel_6a_13_real_us"/>-->
     <!--        <parameter  name="deviceName" value="Google Pixel 6a"/>-->
     <!--        <parameter  name="systemPort" value="10000"/>-->
     <!--        <parameter  name="chromeDriverPort" value="11000"/>-->
