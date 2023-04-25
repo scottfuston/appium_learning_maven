@@ -105,6 +105,7 @@ public class GlobalParams {
         webkitDebugProxyPort.set(webkitDebugProxyPort2);
     }
 
+    // NOT IN USE WITH TESTNG
     public void initializeGlobalParams() throws IOException {
         //TESTNG
         //testng cannot use the System properties as we did below. (junit only)

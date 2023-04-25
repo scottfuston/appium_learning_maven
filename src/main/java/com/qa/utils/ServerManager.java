@@ -16,9 +16,9 @@ public class ServerManager {
 
     public void startServer() throws InterruptedException {
         utils.log().info("starting appium server");
+
         //for more control 👇
         AppiumDriverLocalService server = MacGetAppiumService();
-
         //AppiumDriverLocalService server = getAppiumServerDefault();
 
         server.start();
