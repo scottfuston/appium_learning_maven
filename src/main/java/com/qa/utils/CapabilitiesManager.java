@@ -22,6 +22,7 @@ public class CapabilitiesManager {
 
             if(params.getUDID() != null){
                 utils.log().info("Setting 'udid' capability");
+
                 caps.setCapability("udid", params.getUDID());
             }
 

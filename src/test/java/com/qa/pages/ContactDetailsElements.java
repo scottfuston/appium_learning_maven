@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 
 
 
-public class Contact_Details_Elements {
+public class ContactDetailsElements {
 
-    public Contact_Details_Elements() {
+    public ContactDetailsElements() {
         super();
     }
 

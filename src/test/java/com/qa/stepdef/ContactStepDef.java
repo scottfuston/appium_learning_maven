@@ -1,13 +1,14 @@
 package com.qa.stepdef;
 
 import com.qa.pages.BasePage;
-import com.qa.tests.ContactDetailTests;
+import com.qa.commands.ContactDetailCommands;
 import io.cucumber.java.en.And;
 
 import java.io.IOException;
 
 public class ContactStepDef extends BasePage {
-    ContactDetailTests test = new ContactDetailTests();
+    ContactDetailCommands test = new ContactDetailCommands();
+
     public ContactStepDef() throws IOException {
     }
 

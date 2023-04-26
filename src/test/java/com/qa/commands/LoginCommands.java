@@ -1,4 +1,4 @@
-package com.qa.tests;
+package com.qa.commands;
 
 import com.qa.pages.BasePage;
 import com.qa.pages.LoginElements;
@@ -8,15 +8,15 @@ import org.junit.Assert;
 import java.io.IOException;
 import java.time.Duration;
 
-public class LoginTests extends BasePage {
+public class LoginCommands extends BasePage {
     LoginElements loginEl = new LoginElements();
     GlobalParams params = new GlobalParams();
 
-    public LoginTests() throws IOException {
+    public LoginCommands() throws IOException {
         super();
     }
 
-    public void enterUserName(String username)
+    public void enterEmail(String email)
     {
         if(params.getPlatformName().equalsIgnoreCase("iOS"))
         {
@@ -25,7 +25,7 @@ public class LoginTests extends BasePage {
 
         waitForVisibility(loginEl.emailInput);
         clear(loginEl.emailInput,"Clearing email input field");
-        sendKeys(loginEl.emailInput,username,"Email user : " + username);
+        sendKeys(loginEl.emailInput, email,"Email user : " + email);
         click(loginEl.continueBtn,"Clicking Continue Button");
 
     }

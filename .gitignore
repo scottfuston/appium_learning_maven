@@ -5,6 +5,7 @@
 Android*/
 iOS*/
 src/test/resources/testng.xml
+target/**
 ##############################
 ## IntelliJ
 ##############################
@@ -19,7 +20,6 @@ out/
 ## Java
 ##############################
 .mtj.tmp/
-target/
 *.jar
 *.war
 *.ear
