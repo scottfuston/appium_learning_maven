@@ -4,8 +4,13 @@ import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 import org.openqa.selenium.WebElement;
 
+import java.io.IOException;
 
-    public class ContactDetailsElements {
+
+public class ContactDetailsElements extends BasePage {
+
+    public ContactDetailsElements() throws IOException {
+    }
 
     @AndroidFindBy(xpath = "//android.widget.FrameLayout[@content-desc=\"Contacts\"]/android.view.ViewGroup/android.widget.TextView")
     @iOSXCUITFindBy(accessibility = "Contacts")
