@@ -9,7 +9,6 @@ public class ContactDetailTests extends BasePage {
     Contact_Details_Elements el = new Contact_Details_Elements();
 
     public ContactDetailTests() throws IOException {
-        super();
     }
 
     public void clickOnContactsButton()
