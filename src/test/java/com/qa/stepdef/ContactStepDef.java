@@ -16,4 +16,5 @@ public class ContactStepDef extends BasePage {
     public void iClickContactsButton(){
         test.clickOnContactsButton();
     }
+
 }
