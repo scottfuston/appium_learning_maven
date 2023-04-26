@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import java.io.IOException;
 
 
-public class Contact_Details_Elements extends BasePage {
+public class ContactDetailsElements extends BasePage {
 
-    public Contact_Details_Elements() throws IOException {
+    public ContactDetailsElements() throws IOException {
     }
 
     @AndroidFindBy(xpath = "//android.widget.FrameLayout[@content-desc=\"Contacts\"]/android.view.ViewGroup/android.widget.TextView")

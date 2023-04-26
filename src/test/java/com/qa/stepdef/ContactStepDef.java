@@ -1,7 +1,7 @@
 package com.qa.stepdef;
 
 import com.qa.pages.BasePage;
-import com.qa.tests.ContactDetailTests;
+import com.qa.commads.ContactDetailTests;
 import io.cucumber.java.en.And;
 
 import java.io.IOException;

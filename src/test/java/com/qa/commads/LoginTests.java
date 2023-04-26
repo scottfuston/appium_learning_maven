@@ -1,4 +1,4 @@
-package com.qa.tests;
+package com.qa.commads;
 
 import com.qa.pages.BasePage;
 import com.qa.pages.LoginElements;

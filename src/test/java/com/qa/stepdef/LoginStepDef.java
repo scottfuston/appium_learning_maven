@@ -1,7 +1,7 @@
 package com.qa.stepdef;
 
 import com.qa.pages.BasePage;
-import com.qa.tests.LoginTests;
+import com.qa.commads.LoginTests;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.When;
